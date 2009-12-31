@@ -1,5 +1,6 @@
 .intro {
   position: relative;
+  top: 0;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat center;
   background-position: top;
   background-size: cover;
@@ -12,15 +13,21 @@
   &--pdb-15 {
     padding-bottom: 15px;
   }
+
+  &--bottom-js {
+    position: relative;
+    top: 220px;
+    padding-top: 38px;
+  }
 }
 
 .intro__inner {
-  padding-top: 62px;
+  padding-top: 84px;
 }
 
 .intro__title {
   margin: 0;
-  padding-bottom: 27px;
+  padding-bottom: 30px;
 
   &--lh-33 {
     padding-top: 100px;
@@ -46,6 +53,7 @@
 }
 
 .intro__install {
+  min-height: auto;
   padding-top: 28px;
   display: flex;
   flex-direction: column;
