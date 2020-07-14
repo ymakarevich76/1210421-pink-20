@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Юлия Камейша](https://up.htmlacademy.ru/adaptive/20/user/1210421).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Вашкевич](https://up.htmlacademy.ru/adaptive/20/user/116959).
 
 ---
 
