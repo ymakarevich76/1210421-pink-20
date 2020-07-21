@@ -49,7 +49,9 @@
           Видите, как не хватает ваших?
         </p>
         <div class="user-photo">
-          <img class="user-photo__img" src="https://via.placeholder.com/150x150">
+          <a class="user-photo__thumb">
+            <img class="user-photo__img" src="https://via.placeholder.com/150x150">
+          </a>
           <p class="user-photo__author title-3">Анна
             <span class="user-photo__time">(5 минут назад)</span>
           </p>
@@ -61,7 +63,9 @@
           <span class="user-photo__like">Нравится: 215</span>
         </div>
         <div class="user-photo">
-          <img class="user-photo__img" src="https://via.placeholder.com/150x150">
+          <a class="user-photo__thumb">
+            <img class="user-photo__img" src="https://via.placeholder.com/150x150">
+          </a>
           <p class="user-photo__author title-3">Левон
             <span class="user-photo__time">(5 часов назад)</span>
           </p>
@@ -70,7 +74,9 @@
           <span class="user-photo__like">Нравится: 356</span>
         </div>
         <div class="user-photo">
-          <img class="user-photo__img" src="https://via.placeholder.com/150x150">
+          <a class="user-photo__thumb">
+            <img class="user-photo__img" src="https://via.placeholder.com/150x150">
+          </a>
           <p class="user-photo__author title-3">Антон
             <span class="user-photo__time">(12 часов назад)</span>
           </p>
@@ -79,7 +85,9 @@
           <span class="user-photo__like">Нравится: 666</span>
         </div>
         <div class="user-photo">
-          <img class="user-photo__img" src="https://via.placeholder.com/150x150">
+          <a class="user-photo__thumb">
+            <img class="user-photo__img" src="https://via.placeholder.com/150x150">
+          </a>
           <p class="user-photo__author title-3">Борис
             <span class="user-photo__time">(20 часов назад)</span>
           </p>
@@ -88,7 +96,9 @@
           <span class="user-photo__like">Нравится: 215</span>
         </div>
         <div class="user-photo">
-          <img class="user-photo__img" src="https://via.placeholder.com/150x150">
+          <a class="user-photo__thumb">
+            <img class="user-photo__img" src="https://via.placeholder.com/150x150">
+          </a>
           <p class="user-photo__author title-3">Сергей
             <span class="user-photo__time">(25 часов назад)</span>
           </p>
@@ -97,7 +107,9 @@
           <span class="user-photo__like">Нравится: 4</span>
         </div>
         <div class="user-photo">
-          <img class="user-photo__img" src="https://via.placeholder.com/150x150">
+          <a class="user-photo__thumb">
+            <img class="user-photo__img" src="https://via.placeholder.com/150x150">
+          </a>
           <p class="user-photo__author title-3">Максим
             <span class="user-photo__time">(40 часов назад)</span>
           </p>
@@ -106,7 +118,9 @@
           <span class="user-photo__like">Нравится: 150</span>
         </div>
         <div class="user-photo">
-          <img class="user-photo__img" src="https://via.placeholder.com/150x150">
+          <a class="user-photo__thumb">
+            <img class="user-photo__img" src="https://via.placeholder.com/150x150">
+          </a>
           <p class="user-photo__author title-3">Надежда
             <span class="user-photo__time">(45 часов назад)</span>
           </p>
@@ -120,15 +134,21 @@
         <h2 class="visually-hidden">Загрузить фото</h2>
         <p class="upload__description">Затмите их всех!
           Выкладывайте все, что накопилось в телефоне!</p>
-        <div class="upload__filter filter">
-          <img class="filter__img" src="https://via.placeholder.com/150x150">
-          <div class="filter__icons">
-            <!-- svg-icons -->
-          </div>
-          <input type="range" class="filter__range">
-        </div>
-        <button class="upload__btn btn" type="button">Запостить</button>
-        <button class="upload__btn btn btn--disabled">Отмена</button>
+        <img class="upload__img" src="https://via.placeholder.com/150x150">
+        <form class="upload__form upload-form" action="https://echo.htmlacademy.ru" method="POST">
+          <a href="#" class="upload-form__filter">
+            <!-- svg-icon -->
+          </a>
+          <a href="#" class="upload-form__filter">
+            <!-- svg-icon -->
+          </a>
+          <a href="#" class="upload-form__filter">
+            <!-- svg-icon -->
+          </a>
+          <input type="range" class="upload-form__range">
+          <button class="upload-form__btn btn" type="submit">Запостить</button>
+          <button class="upload-form__btn btn btn--disabled" type="submit">Отмена</button>
+        </form>
       </section>
 
     </main>
