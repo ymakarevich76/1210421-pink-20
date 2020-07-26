@@ -6,25 +6,25 @@
   margin-bottom: 20px;
   position: relative;
 
-&::before {
-  content: "ПАНОРАМА ДНЯ";
-  display: inline-block;
-  vertical-align: middle;
-  position: absolute;
-  top: 0;
-  right: 20px;
-  width: 140px;
-  height: 36px;
-  padding-top: 6px;
+  &::before {
+    content: "ПАНОРАМА ДНЯ";
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 140px;
+    height: 36px;
+    padding-top: 6px;
 
-  font-family: $ff-main;
-  font-size: 12px;
-  line-height: 24px;
-  font-weight: 700;
-  background-color: $base-pink;
-  color: $basic-white;
-  text-align: center;
-  text-transform: uppercase;
+    font-family: $ff-main;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 700;
+    background-color: $base-pink;
+    color: $basic-white;
+    text-align: center;
+    text-transform: uppercase;
   }
 }
 
@@ -97,7 +97,6 @@
 
 .user-photo__text {
   margin: 0;
-  padding: 0;
   padding: 23px 20px;
 
   font-family: $ff-main;

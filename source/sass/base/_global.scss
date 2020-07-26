@@ -16,7 +16,9 @@ img {
   width: 100%;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -32,11 +34,10 @@ a {
 
 .btn {
   margin: 0;
-  padding: 0;
+  padding: 16px 10px;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
-  padding: 16px 10px;
   border: 3px solid $basic-white;
   border-radius: 30px;
 
