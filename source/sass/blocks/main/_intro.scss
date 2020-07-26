@@ -1,0 +1,89 @@
+.intro {
+  margin: 0 auto;
+  position: relative;
+}
+
+.intro__background {
+  padding-top: 68px;
+  background:  url("../img/bg-back-mobile@1x.jpg") no-repeat center;
+  background-position: top;
+  background-size: cover;
+  &--pdb-49 {
+    padding-bottom: 49px;
+  }
+  &--pdb-15 {
+    padding-bottom: 15px;
+  }
+}
+
+.intro__title {
+  margin: 0 auto;
+  margin-top: 15px;
+  padding-bottom: 27px;
+  &--lh-33 {
+    margin-top: 28px;
+    line-height: 33px;
+  }
+}
+
+.intro__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro__img {
+  position: relative;
+  top: 0;
+  left: -31px;
+}
+
+.intro__install {
+  padding-top: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: $dark-grey;
+}
+
+
+.intro__btn {
+  min-width: 280px;
+  margin-bottom: 31px;
+}
+
+.intro__icon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 13px;
+}
+
+.intro__link:not(:last-child) {
+  margin-right: 35px;
+}
+
+.intro__link:nth-child(3) {
+  padding-top: 10px;
+}
+
+.intro__text {
+  padding: 0;
+  margin: 0;
+  padding: 0 20px;
+  padding-bottom: 32px;
+
+  font-family: $ff-main;
+  font-size: $fz-main;
+  font-weight: 300;
+  line-height: 24px;
+  color: $basic-white;
+  text-align: center;
+}
+
+
+
+
+
+

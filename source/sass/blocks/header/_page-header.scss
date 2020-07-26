@@ -1,0 +1,41 @@
+.page-header {
+  height: 66px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.page-header--pd-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 23px;
+  padding-bottom: 15px;
+
+  background-color: $basic-black-opacity;
+}
+
+
+.header__logo {
+  padding-left: 20px;
+
+}
+
+.header__toggle {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+
+}
+.header__toggle--pd-20 {
+  padding-right: 20px;
+}

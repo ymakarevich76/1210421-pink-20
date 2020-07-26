@@ -1,0 +1,28 @@
+.copyright {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.copyright__text {
+  font-family: $ff-main;
+  font-size: $fz-main;
+  line-height: 18px;
+  font-weight: normal;
+  color: $c-main;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: -15px;
+}
+
+.copyright__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright__svg {
+  width: 41px;
+  height: 41px;
+  fill: $base-pink;
+}
