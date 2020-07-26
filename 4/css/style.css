@@ -31,7 +31,7 @@
 
 img {
   display: block;
-  width: 100%; }
+  max-width: 100%; }
 
 *,
 *::before,
@@ -108,12 +108,7 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1000;
-  padding-left: 8px; }
-
-.page-header--pd-0 {
-  padding-left: 0;
-  padding-right: 0; }
+  z-index: 1000; }
 
 .header {
   display: flex;
@@ -130,9 +125,7 @@ a {
   border: none;
   background-color: transparent;
   padding: 0;
-  padding-right: 8px; }
-
-.header__toggle--pd-20 {
+  padding-right: 8px;
   padding-right: 20px; }
 
 .main-nav {
@@ -169,7 +162,7 @@ a {
 
 .intro__background {
   padding-top: 68px;
-  background: url("img/bg-back-mobile@1x.jpg") no-repeat center;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center;
   background-position: top;
   background-size: cover; }
   .intro__background--pdb-49 {
@@ -178,7 +171,7 @@ a {
     padding-bottom: 15px; }
 
 .intro__title {
-  margin: 15px auto 0;
+  margin: 23px auto 0;
   padding-bottom: 27px; }
   .intro__title--lh-33 {
     margin-top: 28px;
