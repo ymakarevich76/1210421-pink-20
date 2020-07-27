@@ -112,11 +112,10 @@
       <section class="offer offer--height">
         <div class="container">
           <h2 class="visually-hidden">Предложение</h2>
-          <div class="offer__title title-1">
-            Устали от серости мегаполиса?<br>
-            <br>
-            Нам есть, что вам
-            предложить!
+          <div class="offer__wrap-title">
+            <p class="offer__title title-1">Устали от серости мегаполиса?</p>
+            <p class="offer__title title-1">Нам есть, что вам
+              предложить!</p>
           </div>
           <div class="offer__box">
             <svg class="offer__svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1200px" height="94.074px" viewBox="0 0 1200 94.074" enable-background="new 0 0 1200 94.074" xml:space="preserve">
@@ -173,40 +172,38 @@
       </section>
 
       <section class="price">
-        <h2 class="visyally-hidden">Прайс</h2>
-        <div class="price__wrapper slider">
-          <div class="price__list slider__list">
-            <div class="price__item slider__item">
-              <div class="price__header">СТАНДАРТ 3,99 USD</div>
-              <ul class="price__box">
-                <li class="price__filter">Розовый фильтр</li>
-                <li class="price__filter">Смайлики</li>
-                <li class="price__filter">Комментарии</li>
-              </ul>
-            </div>
-            <div class="price__item slider__item">
-              <div class="price__header">БАЗА 1,99 USD</div>
-              <ul class="price__box">
-                <li class="price__filter">Розовый фильтр</li>
-                <li class="price__filter">Смайлики</li>
-                <li class="price__filter">Комментарии</li>
-              </ul>
-            </div>
-            <div class="price__item slider__item">
-              <div class="price__header">АНЛИМ 9,99 USD</div>
-              <ul class="price__box">
-                <li class="price__filter">Розовый фильтр</li>
-                <li class="price__filter">Смайлики</li>
-                <li class="price__filter">Комментарии</li>
-              </ul>
-            </div>
-          </div>
-          <p class="price__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle slider__toggle--current" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
-        </div>
+        <h2 class="visually-hidden">Прайс</h2>
+        <table>
+          <tr class="price__box">
+            <th class="price__header visually-hidden">Название</th>
+            <th class="price__header">БАЗА 1,99 USD</th>
+            <th class="price__header">СТАНДАРТ 3,99 USD</th>
+            <th class="price__header">АНЛИМ 9,99 USD</th>
+          </tr>
+          <tr class="price__box">
+            <td class="price__filter">Розовый фильтр</td>
+            <td class="price__filter">Розовый фильтр</td>
+            <td class="price__filter">Розовый фильтр</td>
+            <td class="price__filter">Розовый фильтр</td>
+          </tr>
+          <tr class="price__box">
+            <td class="price__filter">Смайлики</td>
+            <td class="price__filter">Смайлики</td>
+            <td class="price__filter">Смайлики</td>
+            <td class="price__filter">Смайлики</td>
+          </tr>
+          <tr class="price__box">
+            <td class="price__filter">Комментарии</td>
+            <td class="price__filter">Комментарии</td>
+            <td class="price__filter">Комментарии</td>
+            <td class="price__filter">Комментарии</td>
+          </tr>
+        </table>
+        <p class="price__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle slider__toggle--current" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
       </section>
 
       <section class="contacts">
