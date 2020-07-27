@@ -10,7 +10,13 @@
 }
 
 .offer__title {
+  margin: 0;
+  padding: 0;
   color: $c-main;
+}
+
+.offer__wrap-title .offer__title:first-child {
+  margin-bottom: 28px;
 }
 
 .offer__box {
