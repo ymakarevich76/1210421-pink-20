@@ -1,0 +1,77 @@
+.page__body {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  font-size: $fz-main;
+  color: $c-main;
+  font-family: $ff-main;
+  line-height: 24px;
+  font-weight: 400;
+  background-color: $basic-white;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.btn {
+  margin: 0;
+  padding: 16px 10px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  border: 3px solid $basic-white;
+  border-radius: 30px;
+
+  font-family: $ff-main;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: $basic-white;
+}
+
+
+.title-1 {
+  font-family: $ff-main;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  text-align: center;
+  color: $basic-white;
+}
+
+.title-2 {
+  font-family: $ff-main;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: $basic-black;
+}
+
+.title-3 {
+  font-family: $ff-main;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $c-main;
+}

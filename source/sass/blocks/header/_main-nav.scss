@@ -1,0 +1,35 @@
+.main-nav {
+  margin: 0 auto;
+  display: none;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+
+  background-color: $c-main;
+  text-align: center;
+}
+
+.nav-list__item {
+  width: 100%;
+  padding: 20px 0;
+
+  border-bottom: 1px solid $c-main;
+
+  box-shadow: 0 1px 0 $basic-black,
+    inset 0 2px 0 $special-white;
+}
+
+.nav-list__link {
+  font-family: $ff-main;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  color: $basic-white;
+  text-decoration: none;
+  text-transform: uppercase;
+}

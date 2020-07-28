@@ -1,0 +1,106 @@
+.photo {
+  margin-bottom: 20px;
+}
+
+.user-photo:first-child {
+  margin-bottom: 20px;
+  position: relative;
+
+  &::before {
+    content: "ПАНОРАМА ДНЯ";
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 140px;
+    height: 36px;
+    padding-top: 6px;
+
+    font-family: $ff-main;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 700;
+    background-color: $base-pink;
+    color: $basic-white;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.user-photo:not(:first-child) {
+  margin: 0 20px;
+  margin-bottom: 20px;
+
+  background-color: $grey-background;
+}
+
+.user-photo:nth-child(1) .user-photo__box {
+  margin: 0 20px;
+}
+
+.user-photo__box {
+  padding: 1px 10px 18px 18px;
+
+  background-color: $grey-background;
+}
+
+.user-photo__author {
+  margin: 0;
+  padding: 0;
+  padding-top: 17px;
+}
+
+.user-photo__time {
+  font-family: $ff-main;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.user-photo__description {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 11px;
+
+  font-family: $ff-main;
+  font-size: $fz-main;
+  line-height: 24px;
+  font-weight: 400;
+  color: $c-main;
+}
+
+.user-photo__like {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.user-photo__counter {
+  margin: 0;
+  padding: 0;
+  padding-left: 18px;
+
+  font-family: $ff-main;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $base-pink;
+  text-transform: uppercase;
+}
+
+.user-photo__svg {
+  fill: $base-pink;
+}
+
+.user-photo__text {
+  margin: 0;
+  padding: 23px 20px;
+
+  font-family: $ff-main;
+  font-size: $fz-main;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: center;
+}

@@ -1,0 +1,32 @@
+.social {
+  margin-bottom: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__item {
+  margin-right: 4px;
+}
+
+.social__link {
+  width: 53px;
+  height: 53px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: $basic-white;
+  border: 3px solid $c-main-opacity;
+  border-radius: 50%;
+}
+
+.social__svg {
+  fill: $base-pink;
+}

@@ -1,0 +1,41 @@
+.features {
+  padding-top: 50px;
+  position: relative;
+
+  background-color: $grey-background;
+}
+
+.features__list {
+  margin-bottom: 42px;
+}
+
+.features__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.features__title {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10px;
+}
+
+.features__description {
+  margin: 0;
+  padding: 0 15px;
+
+  font-family: $ff-main;
+  font-size: $fz-main;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  color: $c-main;
+}
+
+.features__photo {
+  height: 277px;
+  overflow: hidden;
+}
+
+.features__img {
+  margin: 0 auto;
+}
