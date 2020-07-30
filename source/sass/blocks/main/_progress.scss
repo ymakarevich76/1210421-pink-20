@@ -1,0 +1,107 @@
+.progress {
+  padding-top: 39px;
+
+  background-color: $grey-background;
+}
+
+.progress__title,
+.form-text__title {
+  margin: 0;
+  padding-bottom: 42px;
+  text-align: center;
+  line-height: 18px;
+
+  &--padd-39 {
+    padding-bottom: 39px;
+  }
+}
+
+.progress__text {
+  display: inline-block;
+  position: relative;
+  font-size: 18px;
+  text-transform: initial;
+  color: $c-main;
+}
+
+.progress__text--checkbox {
+  padding-left: 58px;
+}
+
+.progress__text--radio {
+  padding-left: 69px;
+}
+
+.progress__item {
+  padding-left: 6px;
+  position: relative;
+}
+
+.checkbox-wrap {
+  padding-bottom: 52px;
+
+  &:last-child {
+    padding-bottom: 47px;
+  }
+}
+
+.radio-wrap {
+  padding-bottom: 45px;
+}
+
+.progress__text--checkbox::before,
+.progress__text--radio::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  padding-bottom: 20px;
+  border: 2px solid $special-grey-border;
+  background-color: $basic-white;
+}
+
+.progress__text--checkbox::before {
+  width: 37px;
+  height: 39px;
+  top: -3px;
+}
+
+.progress__text--radio::before {
+  content: "";
+  width: 40px;
+  height: 41px;
+  top: -5px;
+  border-radius: 50%;
+}
+
+.progress__text--checkbox::after,
+.progress__text--radio::after {
+  content: "";
+  position: absolute;
+  display: block;
+}
+
+.progress__text--checkbox::after {
+  width: 22px;
+  height: 10px;
+  top: 7px;
+  left: 8px;
+}
+
+.progress__text--radio::after {
+  width: 15px;
+  height: 15px;
+  top: 8px;
+  left: 12px;
+}
+
+.progress__checkbox:checked + .progress__text--checkbox::after {
+  border-left: 2px solid $base-pink;
+  border-bottom: 2px solid $base-pink;
+  transform: rotate(-44deg);
+}
+
+.progress__radio:checked + .progress__text--radio::after {
+  background-color: $base-pink;
+  border-radius: 50%;
+}
