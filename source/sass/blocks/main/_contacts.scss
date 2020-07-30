@@ -1,0 +1,31 @@
+.contacts__title {
+  padding: 0;
+  margin: 0 0 33px 0;
+  color: $c-main;
+}
+
+.contacts__box {
+  margin-bottom: 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts__box:last-child {
+  margin-bottom: 35px;
+}
+
+.contacts__text {
+  line-height: 25px;
+  color: $c-main;
+}
+
+.contacts__link {
+  font-family: $ff-main;
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 300;
+  text-align: center;
+  color: $base-pink;
+}

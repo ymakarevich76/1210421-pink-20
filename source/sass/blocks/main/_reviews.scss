@@ -1,0 +1,30 @@
+.reviews {
+  padding-top: 41px;
+  padding-bottom: 41px;
+}
+
+.reviews__list {
+  margin-bottom: 35px;
+}
+
+.reviews__title {
+  margin: 0;
+  padding-bottom: 13px;
+
+  line-height: 30px;
+}
+
+.reviews__text {
+  margin: 0;
+  padding: 0 5px;
+
+  font-family: $ff-main;
+  font-size: $fz-main;
+  line-height: 30px;
+  color: $c-main;
+  text-align: center;
+}
+
+.reviews__toggles {
+  bottom: -43px;
+}

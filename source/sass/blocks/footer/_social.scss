@@ -6,13 +6,10 @@
 }
 
 .social__list {
+  min-width: 180px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-}
-
-.social__item {
-  margin-right: 4px;
 }
 
 .social__link {

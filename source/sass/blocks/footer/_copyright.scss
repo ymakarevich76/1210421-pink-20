@@ -1,18 +1,19 @@
 .copyright {
+  min-width: 153px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 .copyright__text {
+  margin-left: 7px;
+  display: inline-block;
+
   font-family: $ff-main;
   font-size: $fz-main;
   line-height: 18px;
   font-weight: normal;
   color: $c-main;
-  display: inline-block;
-  margin-left: 10px;
-  margin-right: -15px;
 }
 
 .copyright__link {

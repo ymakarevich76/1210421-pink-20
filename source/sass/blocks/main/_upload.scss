@@ -1,0 +1,80 @@
+.upload {
+  margin-bottom: 9px;
+  background-color: $grey-background;
+}
+
+.upload__box-img {
+  padding-top: 19px;
+  padding-left: 5px;
+  padding-bottom: 40px;
+}
+
+.upload__box-filter {
+  width: 194px;
+  margin-left: 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.upload__filter-svg {
+  fill: $c-main-toggle;
+}
+
+.upload__filter-svg--pink {
+  fill: $base-pink;
+}
+
+.upload-form__range {
+  width: 240px;
+  margin-left: 26px;
+  margin-top: 21px;
+  appearance: none;
+  outline: none;
+  overflow: hidden;
+  height: 20px;
+
+  background-color: $grey-background;
+
+  &::-webkit-slider-runnable-track {
+    height: 2px;
+    background-color: $c-main;
+  }
+
+  &::-webkit-slider-thumb {
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid $base-pink;
+    background-color: $basic-white;
+    margin-top: -6px;
+    margin-left: 80px;
+  }
+}
+
+.upload__box:not(:last-child) {
+  padding-bottom: 18px;
+  border-bottom: 1px solid $c-main-opacity;
+}
+
+.upload__box:last-child {
+  padding-bottom: 28px;
+}
+
+
+.upload__box-btn {
+  min-width: 280px;
+  margin-top: 37px;
+  margin-bottom: 12px;
+  margin-left: 5px;
+  border-color: $base-pink;
+  color: $base-pink;
+}
+
+.upload__box-btn--disabled {
+  margin-top: 0;
+  border-color: $c-main-opacity;
+  color: $c-main-opacity;
+}
