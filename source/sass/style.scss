@@ -1,6 +1,6 @@
 // Начните писать стили здесь
 @import "base/normalize";
-@import "base/var.scss";
+@import "base/var";
 @import "base/fonts";
 @import "base/global";
 @import "base/utilit";
@@ -23,6 +23,7 @@
 @import "blocks/main/form-contest";
 @import "blocks/main/progress";
 @import "blocks/main/form-text";
+@import "blocks/main/triangle";
 
 ///////////////////////////////
 @import "blocks/footer/page-footer";

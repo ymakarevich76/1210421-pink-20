@@ -1,17 +1,23 @@
 .price {
-  margin-bottom: 25px;
+  margin-bottom: 40px;
   padding-top: 105px;
-  padding-bottom: 58px;
+  padding-bottom: 47px;
   background-color: $grey-background;
 
+  overflow-x: hidden;
   position: relative;
-  overflow-y: auto;
+}
+
+.price__table-wrap {
+  width: 100%;
+  margin: 0 auto;
 }
 
 .price__table {
   width: 837px;
   border-collapse: collapse;
-  margin-bottom: 38px;
+  overflow-x: auto;
+  margin-bottom: 40px;
 }
 
 .price__table-head {
@@ -22,35 +28,9 @@
   height: 61px;
 }
 
-.price__table-box::before,
-.price__table-box::after,
-.price__table-box:nth-child(3)::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 104px;
-  width: 2px;
-  height: 279px;
-  border-left: 2px solid $grey-background;
-}
-
-.price__table-box::before {
-  left: 20px;
-}
-
-.price__table-box::after {
-  right: 20px;
-}
-
-.price__table-box:nth-child(3)::after {
-  right: 20px;
-}
-
 .price__header {
-  width: 1200px;
   padding-top: 12px;
   padding-bottom: 25px;
-  padding-left: 44px;
 
   font-family: $ff-main;
   font-size: 16px;
@@ -59,6 +39,10 @@
   text-align: center;
   text-transform: uppercase;
   color: $basic-white;
+}
+
+.price__header:not(:last-child) {
+  border-right: 2px solid $grey-background;
 }
 
 .price__header-value {
@@ -72,8 +56,9 @@
 
 .price__filter {
   width: 280px;
-  padding-left: 42px;
-  border-bottom: 2px solid $grey-background;
+  padding-top: 0;
+  padding-left: 20px;
+  border: 2px solid $grey-background;
   position: relative;
 
   font-family: $ff-main;
@@ -81,6 +66,11 @@
   line-height: 30px;
   font-weight: 400;
   text-transform: uppercase;
+  text-align: left;
+}
+
+.price__table-box:first-child .price__filter {
+  border-top: none;
 }
 
 .price__table-svg {
@@ -88,15 +78,15 @@
 
   &--yes {
     top: 18px;
-    right: -3px;
+    right: 18px;
     width: 31px;
     height: 21px;
     fill: $base-green;
   }
 
   &--no {
-    top: 17px;
-    right: 0;
+    top: 16px;
+    right: 20px;
     width: 27px;
     height: 27px;
     fill: $base-red;
@@ -106,4 +96,14 @@
 .price__filter:first-child,
 .price__header:first-child {
   display: none;
+}
+
+.price__triangle {
+  position: relative;
+}
+
+.price__triangle-svg {
+  position: absolute;
+  top: -140px;
+  right: 0;
 }

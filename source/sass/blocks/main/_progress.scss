@@ -7,13 +7,21 @@
 .progress__title,
 .form-text__title {
   margin: 0;
-  padding-bottom: 42px;
+  padding: 0 20px 42px 20px;
   text-align: center;
   line-height: 18px;
 
   &--padd-39 {
     padding-bottom: 39px;
   }
+}
+
+.progress__title--display {
+  display: none;
+}
+
+.progress__list {
+  padding: 0 20px;
 }
 
 .progress__text {
@@ -33,7 +41,6 @@
 }
 
 .progress__item {
-  padding-left: 6px;
   position: relative;
 }
 
@@ -55,15 +62,14 @@
   display: block;
   position: absolute;
   left: 0;
-  padding-bottom: 20px;
   border: 2px solid $special-grey-border;
   background-color: $basic-white;
 }
 
 .progress__text--checkbox::before {
-  width: 37px;
+  width: 39px;
   height: 39px;
-  top: -3px;
+  top: -4px;
 }
 
 .progress__text--radio::before {
@@ -85,7 +91,7 @@
   width: 22px;
   height: 10px;
   top: 7px;
-  left: 8px;
+  left: 9px;
 }
 
 .progress__text--radio::after {
@@ -104,4 +110,23 @@
 .progress__radio:checked + .progress__text--radio::after {
   background-color: $base-pink;
   border-radius: 50%;
+}
+
+@media (min-width: $tablet-width) {
+  .progress {
+    background-color: $basic-white;
+    padding: 50px 60px;
+  }
+
+  .progress--order {
+    order: -2;
+  }
+
+  .progress__title {
+    padding: 0 10px;
+  }
+
+  .progress__title--display {
+    display: block;
+  }
 }

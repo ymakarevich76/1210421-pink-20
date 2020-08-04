@@ -1,14 +1,10 @@
 .slider {
-  position: relative;
-  text-align: center;
+  overflow-y: hidden;
 }
 
 .slider__toggles {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-
-  position: absolute;
-  left: 130px;
 
   display: flex;
   width: 56px;
