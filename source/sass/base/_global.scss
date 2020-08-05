@@ -1,6 +1,4 @@
 .page__body {
-  width: 320px;
-  margin: 0 auto;
   padding: 0;
   position: relative;
   font-size: $fz-main;
@@ -14,6 +12,7 @@
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 *,
@@ -26,10 +25,17 @@ a {
   text-decoration: none;
 }
 
-.container {
+.wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  position: relative;
+}
+
+.container {
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .btn {

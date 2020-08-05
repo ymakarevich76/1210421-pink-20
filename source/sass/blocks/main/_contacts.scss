@@ -1,11 +1,15 @@
+.contacts {
+  margin-bottom: 40px;
+}
+
 .contacts__title {
   padding: 0;
-  margin: 0 0 33px 0;
+  margin: 0 0 34px 0;
   color: $c-main;
 }
 
 .contacts__box {
-  margin-bottom: 19px;
+  padding-bottom: 18px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,7 +17,7 @@
 }
 
 .contacts__box:last-child {
-  margin-bottom: 35px;
+  margin-bottom: 17px;
 }
 
 .contacts__text {
@@ -28,4 +32,14 @@
   font-weight: 300;
   text-align: center;
   color: $base-pink;
+}
+
+.contacts__triangle {
+  position: relative;
+}
+
+.contacts__triangle-svg {
+  position: absolute;
+  top: -31px;
+  right: 0;
 }

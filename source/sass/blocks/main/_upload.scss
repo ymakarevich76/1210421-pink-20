@@ -1,17 +1,16 @@
 .upload {
-  margin-bottom: 9px;
+  margin-bottom: 40px;
   background-color: $grey-background;
 }
 
 .upload__box-img {
   padding-top: 19px;
-  padding-left: 5px;
   padding-bottom: 40px;
 }
 
 .upload__box-filter {
-  width: 194px;
-  margin-left: 40px;
+  width: 195px;
+  margin-right: 12px;
 
   display: flex;
   justify-content: space-between;
@@ -28,7 +27,6 @@
 
 .upload-form__range {
   width: 240px;
-  margin-left: 26px;
   margin-top: 21px;
   appearance: none;
   outline: none;
@@ -77,4 +75,11 @@
   margin-top: 0;
   border-color: $c-main-opacity;
   color: $c-main-opacity;
+}
+
+.upload__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

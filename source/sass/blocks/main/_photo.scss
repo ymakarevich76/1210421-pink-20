@@ -2,8 +2,18 @@
   margin-bottom: 20px;
 }
 
-.user-photo:first-child {
+.user-photo__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-photo {
   margin-bottom: 20px;
+}
+
+.user-photo--element {
   position: relative;
 
   &::before {
@@ -12,7 +22,7 @@
     vertical-align: middle;
     position: absolute;
     top: 0;
-    right: 20px;
+    right: 40px;
     width: 140px;
     height: 36px;
     padding-top: 6px;
@@ -28,18 +38,28 @@
   }
 }
 
-.user-photo:not(:first-child) {
-  margin: 0 20px;
-  margin-bottom: 20px;
-
-  background-color: $grey-background;
+.user-photo__img {
+  display: block;
+  margin: 0 auto;
 }
 
-.user-photo:nth-child(1) .user-photo__box {
-  margin: 0 20px;
+.user-photo__img-tablet,
+.user-photo__img-desktop {
+  display: none;
+}
+
+.user-photo:not(:first-child) {
+  margin-bottom: 20px;
+}
+
+.user-photo__block {
+  display: flex;
+  justify-content: center;
 }
 
 .user-photo__box {
+  width: 280px;
+  margin: 0 auto;
   padding: 1px 10px 18px 18px;
 
   background-color: $grey-background;
@@ -96,11 +116,89 @@
 
 .user-photo__text {
   margin: 0;
-  padding: 23px 20px;
+  padding: 23px 10px;
 
   font-family: $ff-main;
   font-size: $fz-main;
   line-height: 30px;
   font-weight: 400;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .user-photo__img-mobile,
+  .user-photo__img-desktop {
+    display: none;
+  }
+
+  .user-photo__img-tablet {
+    display: block;
+  }
+
+  .user-photo--element .user-photo__box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 20px;
+  }
+
+  .user-photo__description {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .user-photo--element .user-photo__like {
+    padding-top: 17px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .user-photo__svg {
+    order: 1;
+  }
+
+  .user-photo__counter {
+    padding-right: 17px;
+  }
+
+  .user-photo__wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .user-photo__text {
+    font-size: 18px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-photo__img-mobile,
+  .user-photo__img-tablet {
+    display: none;
+  }
+
+  .user-photo__img-desktop {
+    display: block;
+  }
+
+  .user-photo--element .user-photo__block {
+    margin: 0 126px;
+  }
+
+  .user-photo__wrap {
+    margin: 0 130px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .user-photo__text {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
 }

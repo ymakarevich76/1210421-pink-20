@@ -1,12 +1,33 @@
+.form-text__inner,
+.form-text__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .form-text__title {
   padding-top: 14px;
   padding-bottom: 15px;
 }
 
 .form-text__textarea {
-  width: 280px;
+  min-width: 280px;
   margin-bottom: 41px;
   padding: 14px 21px;
   height: 202px;
   resize: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form-text__textarea {
+    min-width: 500px;
+  }
+
+  .form-text__wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

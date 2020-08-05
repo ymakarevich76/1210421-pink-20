@@ -1,0 +1,13 @@
+.triangle-svg {
+  display: block;
+  width: 320px;
+  height: 94px;
+  fill: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .triangle-svg {
+    width: 100%;
+    height: 205px;
+  }
+}

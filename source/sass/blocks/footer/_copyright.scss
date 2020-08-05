@@ -1,12 +1,12 @@
 .copyright {
-  min-width: 153px;
+  min-width: 130px;
+  margin-bottom: 39px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
 .copyright__text {
-  margin-left: 7px;
   display: inline-block;
 
   font-family: $ff-main;
@@ -18,7 +18,7 @@
 
 .copyright__link {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
