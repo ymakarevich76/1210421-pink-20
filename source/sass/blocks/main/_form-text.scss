@@ -19,15 +19,34 @@
   resize: none;
 }
 
+.form-contest__legend-none {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .form-text__textarea {
     min-width: 500px;
   }
 
   .form-text__wrap {
+    grid-column: 1/3;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-text__textarea {
+    min-width: 800px;
+  }
+
+  .form-text {
+    grid-column: 1/3;
+  }
+
+  .form-contest__legend-none {
+    display: inline-block;
   }
 }

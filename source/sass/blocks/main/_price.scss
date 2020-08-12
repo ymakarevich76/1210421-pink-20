@@ -4,7 +4,6 @@
   padding-bottom: 47px;
   background-color: $grey-background;
 
-  overflow-x: hidden;
   position: relative;
 }
 
@@ -16,19 +15,12 @@
 .price__table {
   width: 837px;
   border-collapse: collapse;
-  overflow-x: auto;
+  overflow-x: hidden;
   margin-bottom: 40px;
 }
 
-.price__table-head {
-  background-color: $c-main;
-}
-
-.price__table-box {
-  height: 61px;
-}
-
 .price__header {
+  height: 90px;
   padding-top: 12px;
   padding-bottom: 25px;
 
@@ -45,6 +37,10 @@
   border-right: 2px solid $grey-background;
 }
 
+.price__header:not(:first-child) {
+  background-color: $c-main;
+}
+
 .price__header-value {
   font-size: 18px;
   font-weight: 300;
@@ -56,6 +52,7 @@
 
 .price__filter {
   width: 280px;
+  height: 59px;
   padding-top: 0;
   padding-left: 20px;
   border: 2px solid $grey-background;
@@ -106,4 +103,76 @@
   position: absolute;
   top: -140px;
   right: 0;
+}
+
+.price__filter-name {
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .price {
+    padding: 100px 20px 80px;
+  }
+
+  .price__table {
+    width: 619px;
+    margin-bottom: 0;
+  }
+
+  .price__filter-name {
+    display: none;
+  }
+
+  .price__filter,
+  .price__header {
+    width: 152px;
+  }
+
+  .price__filter {
+    height: 50px;
+  }
+
+  .price__filter:first-child,
+  .price__header:first-child {
+    display: table-cell;
+  }
+
+  .price__toggles {
+    display: none;
+  }
+
+  .price__table-svg {
+    position: absolute;
+
+    &--yes {
+      right: 60px;
+    }
+
+    &--no {
+      right: 65px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price {
+    padding: 100px 130px 80px 130px;
+  }
+
+  .price__table {
+    width: 940px;
+  }
+
+
+  .price__table-svg {
+    position: absolute;
+
+    &--yes {
+      right: 100px;
+    }
+
+    &--no {
+      right: 105px;
+    }
+  }
 }
