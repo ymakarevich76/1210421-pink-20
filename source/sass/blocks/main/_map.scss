@@ -2,3 +2,32 @@
   display: flex;
   justify-content: center;
 }
+
+.map__img-tablet,
+.map__img-desktop {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .map__img-mobile,
+  .map__img-desktop {
+    display: none;
+  }
+
+  .map__img-tablet {
+    display: block;
+    width: 660px;
+    height: 374px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__img-mobile,
+  .map__img-tablet {
+    display: none;
+  }
+
+  .map__img-desktop {
+    display: block;
+  }
+}

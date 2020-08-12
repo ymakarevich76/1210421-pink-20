@@ -28,3 +28,9 @@
     border: 3px solid $c-main;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .slider__toggles {
+    display: none;
+  }
+}

@@ -19,11 +19,11 @@
 }
 
 .intro__title {
-  margin: 23px auto 0;
+  margin: 0;
   padding-bottom: 27px;
 
   &--lh-33 {
-    margin-top: 28px;
+    padding-top: 100px;
     line-height: 33px;
   }
 }
@@ -135,7 +135,7 @@
   }
 
   .intro__title--lh-33 {
-    padding: 85px 60px;
+    padding: 180px 60px 90px;
   }
 
   .intro__text {
@@ -153,10 +153,22 @@
       padding-top: 111px;
       padding-bottom: 120px;
     }
+
+    &--pdb-15 {
+      padding-top: 111px;
+      padding-bottom: 120px;
+    }
   }
 
   .intro__title {
     padding: 36px 0 0 30px;
+  }
+
+  .intro__title--lh-33 {
+    margin-top: 0;
+    padding: 185px 60px 80px;
+    font-size: 50px;
+    line-height: 68px;
   }
 
   .intro__install {

@@ -273,11 +273,17 @@
         </section>
         <section class="upload">
           <h2 class="visually-hidden">Загрузить фото</h2>
-          <div class="upload__box">
-            <div class="container upload__inner">
+
+          <div class="container upload__inner">
+            <div class="upload__box">
               <div class="upload__box-img">
                 <img class="upload__img" src="../img/photo-road-mobile@1x.jpg">
               </div>
+
+          </div> <!--/upload__box-->
+
+          <div class="upload__box">
+            <div class="upload__wrap">
               <div class="upload__box-filter">
                 <a href="#" class="upload__filter">
                   <svg class="upload__filter-svg upload__filter-svg--pink" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
@@ -300,15 +306,16 @@
                 </a>
               </div>
               <form class="upload__box-form upload-form" action="https://echo.htmlacademy.ru" method="POST">
-                <input type="range" class="upload-form__range" min="0" max="100" name="range" step="1">
+                <input type="range" class="upload-form__range " min="0" max="100" name="range" step="1">
+                <input type="range" class="upload-form__range upload-form__range--none" min="0" max="100" name="range" step="1">
+                <input type="range" class="upload-form__range upload-form__range--none" min="0" max="100" name="range" step="1">
               </form>
-              </div> <!--/upload__inner-->
-            </div> <!--/upload__box-->
-          <div class="upload__box">
-            <div class="container upload__inner">
+          </div> <!--/upload__wrap-->
+            <div class="container upload__box-inner">
               <button class="upload__box-btn btn" type="submit">Запостить</button>
               <button class="upload__box-btn btn upload__box-btn--disabled" type="submit">Отмена</button>
             </div>
+          </div> <!--/upload__inner-->
           </div>
         </section>
       </main>

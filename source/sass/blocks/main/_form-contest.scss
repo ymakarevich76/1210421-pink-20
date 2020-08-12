@@ -1,5 +1,6 @@
 .form-contest {
   padding-top: 45px;
+  padding-bottom: 45px;
 }
 
 .form-contest__item {
@@ -112,5 +113,23 @@
 
   .form-contest__btn {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-contest__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .form-contest__item--contacts {
+    grid-column: 1/3;
+  }
+
+  .form-contest__box-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
 }
