@@ -118,6 +118,10 @@
 
   .form-contest__item--contacts .form-contest__box {
     margin-bottom: 24px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .form-contest__item--contacts .form-contest__box:last-child {
@@ -144,13 +148,6 @@
   .form-contest__item:first-child .form-contest__label {
     padding-left: 0;
     padding-top: 10px;
-  }
-
-  .form-contest__item--contacts .form-contest__box {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: flex-start;
-    align-items: flex-start;
   }
 
   .form-contest__btn {

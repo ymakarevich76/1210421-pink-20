@@ -48,6 +48,8 @@
 }
 
 .upload__filter-svg--pink {
+  width: 44px;
+  height: 44px;
   fill: $base-pink;
 }
 
@@ -84,20 +86,15 @@
   display: none;
 }
 
-.upload__filter-svg--pink {
-    width: 44px;
-    height: 44px;
-  }
+.upload__filter-svg--width24{
+  width: 48px;
+  height: 43px;
+}
 
-  .upload__filter-svg--width24{
-    width: 48px;
-    height: 43px;
-  }
-
-  .upload__filter-svg--width16 {
-    width: 32px;
-    height: 32px;
-  }
+.upload__filter-svg--width16 {
+  width: 32px;
+  height: 32px;
+}
 
 .upload__box:last-child {
   padding-bottom: 28px;

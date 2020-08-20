@@ -190,7 +190,10 @@
   }
 
   .intro__title--pt100 {
-    padding: 185px 60px 80px;
+    padding: 58px 60px 80px;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
   }
 
   .intro__box {
@@ -227,19 +230,8 @@
     line-height: 68px;
   }
 
-  .intro__title--pt100 {
-    padding-top: 58px;
-    padding-bottom: 0;
-    display: flex;
-    justify-content: center;
-  }
-
   .intro__img-mobile,
   .intro__img-tablet {
     display: none;
-  }
-
-  .intro__img-desktop {
-    display: block;
   }
 }

@@ -18,15 +18,15 @@
   position: relative;
 
   &::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 57px;
-  left: 18px;
-  width: 202px;
-  height: 202px;
-  border: 16px solid $base-pink;
-  border-radius: 50%;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 57px;
+    left: 18px;
+    width: 202px;
+    height: 202px;
+    border: 16px solid $base-pink;
+    border-radius: 50%;
   }
 
   &::after {
