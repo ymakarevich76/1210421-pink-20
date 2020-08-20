@@ -28,3 +28,31 @@
   height: 41px;
   fill: $base-pink;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+  }
+
+  .copyright__link {
+    margin-left: 7px;
+  }
+
+  .copyright__svg {
+    margin-right: -6px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    display: flex;
+    justify-content: center;
+    padding-left: 15px;
+  }
+
+  .copyright__text {
+    font-size: 18px;
+  }
+}

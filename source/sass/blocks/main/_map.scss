@@ -1,6 +1,14 @@
 .map {
+  position: relative;
   display: flex;
   justify-content: center;
+}
+
+
+.map__triangle {
+  position: absolute;
+  width: 100%;
+  height: auto;
 }
 
 .map__img-tablet,

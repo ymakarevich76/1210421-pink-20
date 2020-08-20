@@ -15,10 +15,20 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .page-footer__logo {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer .container {
     max-width: 1200px;
+  }
+
+  .page-footer__logo {
+    padding-right: 20px;
+    justify-content: center;
   }
 }

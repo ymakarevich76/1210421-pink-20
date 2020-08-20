@@ -1,6 +1,5 @@
 .price {
   margin-bottom: 40px;
-  padding-top: 108px;
   padding-bottom: 47px;
   background-color: $grey-background;
 
@@ -14,9 +13,10 @@
 
 .price__table {
   width: 837px;
+  margin-bottom: 44px;
+  margin-top: 72px;
   border-collapse: collapse;
   overflow-x: hidden;
-  margin-bottom: 44px;
 }
 
 .price__header {
@@ -53,7 +53,7 @@
 .price__filter {
   width: 280px;
   height: 59px;
-  padding-top: 0;
+  padding-top: 4px;
   padding-left: 20px;
   border: 2px solid $grey-background;
   position: relative;
@@ -97,12 +97,8 @@
 
 .price__triangle {
   position: relative;
-}
-
-.price__triangle-svg {
-  position: absolute;
-  top: -140px;
-  right: 0;
+  width: 100%;
+  height: auto;
 }
 
 .price__filter-name {
@@ -111,12 +107,21 @@
 
 @media (min-width: $tablet-width) {
   .price {
-    padding: 100px 20px 80px;
+    padding-bottom: 65px;
+    margin-bottom: 45px;
   }
 
   .price__table {
     width: 619px;
     margin-bottom: 0;
+    margin-top: 45px;
+    margin-left: 20px;
+  }
+
+  .price__header {
+    height: 80px;
+    padding-top: 5px;
+    padding-bottom: 0;
   }
 
   .price__filter-name {
@@ -129,7 +134,10 @@
   }
 
   .price__filter {
-    height: 50px;
+    height: 47px;
+    padding-top: 0;
+    padding-left: 15px;
+    text-transform: none;
   }
 
   .price__filter:first-child,
@@ -146,33 +154,60 @@
 
     &--yes {
       right: 60px;
+      top: 10px;
     }
 
     &--no {
-      right: 65px;
+      right: 61px;
+      top: 8px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .price {
-    padding: 100px 130px 80px 130px;
+    margin-bottom: 60px;
+    padding-bottom: 95px;
   }
-
   .price__table {
     width: 940px;
+    margin: 0 auto;
+    margin-top: 53px;
   }
 
+  .price__header {
+    height: 98px;
+    padding-top: 0;
+    font-size: 18px;
+  }
+
+  .price__filter,
+  .price__header {
+    width: 233px;
+  }
+
+  .price__header-value {
+    font-size: 24px;
+  }
+
+  .price__filter {
+    height: 61px;
+    padding-top: 5px;
+    padding-left: 21px;
+    font-size: 18px;
+  }
 
   .price__table-svg {
     position: absolute;
 
     &--yes {
+      top: 20px;
       right: 100px;
     }
 
     &--no {
-      right: 105px;
+      top: 18px;
+      right: 103px;
     }
   }
 }
