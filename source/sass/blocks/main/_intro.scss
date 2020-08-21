@@ -1,43 +1,37 @@
 .intro {
   position: relative;
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center;
-  background-position: top;
+  top: 0;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center 1px;
   background-size: cover;
 
   &--pdb-49 {
-    padding-top: 62px;
+    padding-top: 93px;
     padding-bottom: 49px;
   }
 
   &--pdb-15 {
+    padding-top: 94px;
     padding-bottom: 15px;
   }
 }
 
-.intro__inner {
-  padding-top: 62px;
+.intro__inner-1 {
+  padding-top: 89px;
 }
 
 .intro__title {
   margin: 0;
-  padding-bottom: 27px;
+  padding-bottom: 28px;
 
   &--lh-33 {
-    padding-top: 100px;
     line-height: 33px;
   }
-}
-
-.intro__box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .intro__img-mobile {
   position: relative;
   top: 0;
-  left: -31px;
+  left: -20px;
 }
 
 .intro__img-tablet,
@@ -91,23 +85,41 @@
   .intro {
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
     background-position: top;
-  }
 
-  .intro__inner {
-    padding: 0 10px;
+    &--pdb-15 {
+      padding-top: 157px;
+      padding-bottom: 39px;
+    }
   }
 
   .intro__wrapper {
     display: flex;
-    height: 729px;
-    padding-top: 160px;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 95px;
+    overflow: hidden;
   }
 
   .intro__title {
-    padding: 36px 0 0 16px;
-
+    display: inline-block;
     font-size: 40px;
     line-height: 48px;
+    padding: 20px 55px;
+  }
+
+  .intro__title--lh-33 {
+    margin: 0 auto;
+    display: inherit;
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  .intro__title--pt100 {
+    padding: 83px 55px 79px;
+  }
+
+  .intro__box {
+    min-width: 700px;
   }
 
   .intro__img-mobile,
@@ -119,23 +131,29 @@
     display: block;
     position: relative;
     top: 0;
-    left: -31px;
+    left: -341px;
+    width: 700px;
+    height: 545px;
   }
 
   .intro__install {
-    width: 310px;
-    padding-left: 10px;
+    width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 355px;
-    left: 0;
+    top: 350px;
+    left: 20px;
     background-color: transparent;
   }
 
-  .intro__title--lh-33 {
-    padding: 180px 60px 90px;
+  .intro__btn {
+    min-width: 300px;
+    margin-bottom: 45px;
+  }
+
+  .intro__icon {
+    margin-bottom: 25px;
   }
 
   .intro__text {
@@ -151,36 +169,69 @@
 
     &--pdb-49 {
       padding-top: 111px;
-      padding-bottom: 120px;
+      padding-bottom: 90px;
     }
 
     &--pdb-15 {
-      padding-top: 111px;
-      padding-bottom: 120px;
+      padding-top: 169px;
+      padding-bottom: 89px;
     }
   }
 
+  .intro__wrapper {
+    padding-top: 120px;
+  }
+
   .intro__title {
-    padding: 36px 0 0 30px;
+    display: inline-block;
+    font-size: 50px;
+    line-height: 68px;
+    padding: 0 30px;
+  }
+
+  .intro__title--pt100 {
+    padding: 58px 60px 80px;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .intro__box {
+    min-width: 1050px;
+  }
+
+  .intro__img-desktop {
+    display: block;
+    position: relative;
+    top: 0;
+    left: -283px;
+    width: 1050px;
+    height: 645px;
+  }
+
+  .intro__install {
+    margin-left: 110px;
+    position: absolute;
+    top: 420px;
+  }
+
+  .intro__btn {
+    font-size: 21px;
+    margin-bottom: 68px;
+  }
+
+  .intro__icon {
+    margin-bottom: 45px;
   }
 
   .intro__title--lh-33 {
     margin-top: 0;
-    padding: 185px 60px 80px;
     font-size: 50px;
     line-height: 68px;
-  }
-
-  .intro__install {
-    margin-left: 100px;
   }
 
   .intro__img-mobile,
   .intro__img-tablet {
     display: none;
-  }
-
-  .intro__img-desktop {
-    display: block;
   }
 }

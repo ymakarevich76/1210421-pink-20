@@ -1,0 +1,9 @@
+.page-main {
+  margin-top: -66px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    margin-top: -110px;
+  }
+}

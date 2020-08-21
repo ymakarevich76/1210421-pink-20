@@ -1,5 +1,5 @@
-.form-text__inner,
 .form-text__wrap {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,11 +12,12 @@
 }
 
 .form-text__textarea {
-  min-width: 280px;
+  width: 100%;
   margin-bottom: 41px;
   padding: 14px 21px;
-  height: 202px;
+  min-height: 202px;
   resize: none;
+  white-space: pre-line;
 }
 
 .form-contest__legend-none {
@@ -24,8 +25,19 @@
 }
 
 @media (min-width: $tablet-width) {
+  .form-contest__item.form-text {
+    margin-bottom: 67px;
+  }
+
   .form-text__textarea {
-    min-width: 500px;
+    min-height: 193px;
+    margin-top: 22px;
+    margin-bottom: 31px;
+    padding: 14px 18px;
+  }
+
+  .form-text__title {
+    padding: 14px 38px;
   }
 
   .form-text__wrap {
@@ -39,7 +51,9 @@
 
 @media (min-width: $desktop-width) {
   .form-text__textarea {
-    min-width: 800px;
+    margin-top: 20px;
+    min-height: 125px;
+    margin-bottom: 38px;
   }
 
   .form-text {
@@ -48,5 +62,17 @@
 
   .form-contest__legend-none {
     display: inline-block;
+  }
+
+  .form-contest__item.form-text {
+    margin-bottom: 32px;
+  }
+
+  .form-contest__legend-star {
+    margin-right: 0;
+  }
+
+  .form-contest__legend {
+    white-space: pre;
   }
 }

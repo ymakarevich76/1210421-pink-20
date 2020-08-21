@@ -1,15 +1,23 @@
 .page-header {
-  height: 66px;
-  width: 100%;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   z-index: 1000;
+  background-color: $basic-black-opacity;
+}
+
+.page-header .container {
+  padding: 0;
+}
+
+.page-header__wrap {
+  width: 100%;
+  height: 60px;
+  padding-left: 20px;
+  padding-right: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: $basic-black-opacity;
-  padding: 0 20px;
 }
 
 .page-header__logo-tablet,
@@ -18,17 +26,81 @@
 }
 
 .page-header__toggle {
-  border: none;
+  position: relative;
+  display: block;
+  width: 70px;
+  height: 50px;
   background-color: transparent;
-  padding: 0;
+  cursor: pointer;
+  border: none;
+
+  &:hover,
+  &:active {
+    background-color: transparent;
+  }
+}
+
+.page-header__toggle--opened {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 10px;
+    width: 50px;
+    height: 4px;
+    background-color: $basic-white;
+    box-shadow: 0 10px 0 0 $basic-white, 0 20px 0 0 $basic-white;
+  }
+}
+
+.page-header__toggle--closed {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 23px;
+    width: 31px;
+    height: 3px;
+    background-color: $basic-white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade($basic-white, 30%);
+  }
+}
+
+.page-header__wrap--active {
+  background-color: $c-main;
+  border-top: 1px solid $special-white;
+  border-bottom: 1px solid $basic-black;
 }
 
 @media (min-width: $tablet-width) {
-  .page-header {
+  .page-header__wrap {
     height: 110px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  }
+
+  .page-header .container {
+    padding: 0;
+  }
+
+  .page-header__logo {
+    margin-top: -15px;
+  }
+
+  .page-header__toggle {
+    margin-top: 5px;
   }
 
   .page-header__logo-mobile {
@@ -41,8 +113,19 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-header {
-    padding: 0 130px;
+  .page-header .container {
+    padding: 0 20px;
+  }
+
+  .page-header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+
+  .page-header__wrap {
+    padding: 0;
   }
 
   .page-header__toggle {
