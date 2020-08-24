@@ -1,6 +1,6 @@
 .progress__title,
 .form-text__title {
-  margin: 0;
+  margin: 0 auto;
   padding: 38px 20px 42px 20px;
   text-align: center;
   line-height: 18px;
@@ -110,7 +110,7 @@
   }
 
   .progress__list {
-    padding-top: 50px;
+    padding-top: 49px;
   }
 
   .fieldset--grey .progress--1 {
@@ -130,8 +130,7 @@
   }
 
   .progress__title--display {
-    display: inline-block;
-    vertical-align: middle;
+    display: block;
   }
 
   .checkbox-wrap:last-child {

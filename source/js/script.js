@@ -1,18 +1,20 @@
-var navMain = document.querySelector('.main-nav');
-var navToggle = document.querySelector('.main-nav__toggle');
-var intro = document.querySelector('.intro');
+var header = document.querySelector('.page-header__wrap');
+var navToggle = document.querySelector('.page-header__toggle');
+var nav = document.querySelector('.main-nav');
 
-navMain.classList.remove('main-nav--nojs');
-intro.classList.remove('intro--bottom-js');
+header.classList.remove('page-header__wrap--active');
 
-navToggle.addEventListener('click', function() {
-  if (navMain.classList.contains('main-nav--closed')) {
-    navMain.classList.remove('main-nav--closed');
-    navMain.classList.add('main-nav--opened');
-    intro.classList.add('intro--bottom-js');
-  } else {
-    navMain.classList.add('main-nav--closed');
-    navMain.classList.remove('main-nav--opened');
-    intro.classList.remove('intro--bottom-js');
+navToggle.addEventListener('click', function () {
+  if (navToggle.classList.contains('page-header__toggle--closed')) {
+    navToggle.classList.remove('page-header__toggle--closed');
+    navToggle.classList.add('page-header__toggle--opened');
+    header.classList.remove('page-header__wrap--active');
+    nav.classList.remove('main-nav--js');
+  }
+  else {
+    navToggle.classList.add('page-header__toggle--closed');
+    navToggle.classList.remove('page-header__toggle--opened');
+    header.classList.add('page-header__wrap--active');
+    nav.classList.add('main-nav--js');
   }
 });

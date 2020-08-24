@@ -4,6 +4,36 @@
   justify-content: center;
 }
 
+.map__img::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 95px;
+  left: 143px;
+  width: 36px;
+  height: 36px;
+  background-color: $basic-white;
+  border-radius: 50%;
+}
+
+.map__img::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 105px;
+  left: 153px;
+  width: 16px;
+  height: 16px;
+  background-color: $base-pink;
+  border-radius: 50%;
+}
+
+.map__img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
 
 .map__triangle {
   position: absolute;

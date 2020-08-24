@@ -27,13 +27,13 @@
 }
 
 .form-contest__label {
-  padding-left: 22px;
+  padding-left: 25px;
   display: inline-block;
   padding-bottom: 5px;
 }
 
 .form-contest__placeholder {
-  padding: 14px 19px;
+  padding: 14px 20px;
   border: 2px solid $special-grey-border;
   border-radius: 1px;
 
@@ -94,7 +94,7 @@
   }
 
   .form-contest__item {
-    margin-bottom: 6px;
+    margin-bottom: 7px;
 
     &:nth-of-type(1) {
       order: -3;
@@ -113,7 +113,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 54px;
+    margin-bottom: 53px;
   }
 
   .form-contest__item--contacts .form-contest__box {
@@ -180,7 +180,7 @@
 
   .form-contest__item:not(:first-child) {
     padding: 0 40px;
-    margin-bottom: 23px;
+    margin-bottom: 25px;
   }
 
   .fieldset--grey:nth-child(2) .form-contest__item {
@@ -196,6 +196,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 70px;
+  }
+
+  .fieldset--grey .form-contest__item {
+    padding-bottom: 9px;
   }
 
   .form-contest__item--contacts .form-contest__box {
