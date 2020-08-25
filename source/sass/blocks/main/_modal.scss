@@ -10,8 +10,6 @@
 }
 
 .modal__wrap {
-  position: relative;
-  box-shadow: 0 7px 10px $special-box-shadow;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,6 +17,8 @@
   z-index: 1000;
   background-color: $basic-white;
   width: auto;
+  position: relative;
+  box-shadow: 0 7px 10px $special-box-shadow;
 }
 
 .modal__title {
@@ -58,6 +58,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.modal__inner--backgr {
   background-color: $grey-background;
 }
 
@@ -96,7 +99,7 @@
     font-size: 18px;
   }
 
-  .modal__text br {
+  .modal__text--2 br {
     display: none;
   }
 }
@@ -107,7 +110,27 @@
     margin: 0 auto;
   }
 
+  .modal__wrap.container {
+    padding: 0;
+  }
+
+  .modal__wrap-text {
+    padding-bottom: 50px;
+  }
+
   .modal__inner:first-child {
     padding: 0 155px 30px;
+  }
+
+  .modal__inner--grey {
+    background-color: $grey-background;
+  }
+
+  .modal__title br {
+    display: none;
+  }
+
+  .modal__text--1 br {
+    display: block;
   }
 }

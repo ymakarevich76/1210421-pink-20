@@ -1,4 +1,4 @@
-var popupLink = document.querySelector('.form-contest__btn');
+var popupLink = document.querySelectorAll('.form-contest__btn');
 var modalError = document.querySelector('.modal-error');
 var popupClose = document.querySelector('.modal__btn');
 
