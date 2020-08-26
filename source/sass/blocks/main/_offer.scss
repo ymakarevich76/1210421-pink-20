@@ -29,7 +29,6 @@
   color: $c-main;
 }
 
-
 .offer__text--pad {
   padding: 6px 0 0;
 }
@@ -70,6 +69,10 @@
     padding: 3px 30px;
   }
 
+  .offer__text br {
+    display: none;
+  }
+
   .offer__text-tablet {
     display: block;
   }
@@ -77,22 +80,35 @@
 
 @media (min-width: $desktop-width) {
   .offer {
-    padding-bottom: 69px;
-  }
+    padding-top: 42px;
+    padding-bottom: 56px;
 
-  .offer--pad {
-    padding-bottom: 85px;
+    &--pad,
+    &--pad-top {
+      padding-top: 87px;
+      padding-bottom: 85px;
+    }
+
+    &--pad-top {
+      padding-bottom: 70px;
+    }
   }
 
   .offer__wrap-title {
     padding-top: 21px;
   }
 
-  .offer__text {
-    padding: 3px 80px;
+  .offer__text br {
+    display: block;
+    font-size: 0;
+    line-height: 0;
   }
 
   .offer__text-tablet {
     display: inline-block;
+  }
+
+  .offer__text--pad {
+    padding: 3px 70px;
   }
 }

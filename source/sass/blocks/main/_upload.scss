@@ -9,7 +9,7 @@
   justify-content: center;
 }
 
-.upload__box-img {
+.upload__box:first-child {
   padding-bottom: 40px;
 }
 
@@ -25,7 +25,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 67px;
+  padding-bottom: 66px;
+  padding-right: 10px;
 }
 
 .upload__box-filter::after {
@@ -86,9 +87,9 @@
   display: none;
 }
 
-.upload__filter-svg--width24{
+.upload__filter-svg--width24 {
   width: 48px;
-  height: 43px;
+  height: 48px;
 }
 
 .upload__filter-svg--width16 {
@@ -156,11 +157,11 @@
   .upload__wrap {
     display: flex;
     flex-direction: column;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
   }
 
   .upload__box-filter {
-    min-width: 260px;
+    min-width: 280px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -191,13 +192,14 @@
 
   .upload__filter {
     display: block;
-    margin-left: 8px;
+    margin-left: 22px;
+    margin-top: -3px;
   }
 
   .upload-form__range {
     position: relative;
     top: -7px;
-    right: 0;
+    right: 4px;
     width: 202px;
   }
 
@@ -217,7 +219,7 @@
     display: block;
   }
 
-  .upload__filter-svg{
+  .upload__filter-svg {
     width: calc(100% / 2);
     height: calc(height / 2);
     fill: #d22856;
@@ -227,7 +229,6 @@
     min-width: 260px;
     margin-left: 10px;
     margin-bottom: 22px;
-
   }
 }
 
@@ -245,6 +246,7 @@
   .upload__box:last-child {
     display: flex;
     justify-content: flex-start;
+    padding-bottom: 36px;
   }
 
   .upload__box-img {
@@ -264,6 +266,11 @@
     min-width: 410px;
   }
 
+  .upload__filter {
+    margin-left: 8px;
+    margin-top: -2px;
+  }
+
   .upload__box-filter::after {
     width: 100%;
     right: -10px;
@@ -279,15 +286,15 @@
   }
 
   .upload__box-filter:nth-child(1) .upload-form__range::-webkit-slider-thumb {
-    margin-left: -75px;
+    margin-left: -70px;
   }
 
   .upload__box-filter:nth-child(2) .upload-form__range::-webkit-slider-thumb {
-    margin-left: 105px;
+    margin-left: 110px;
   }
 
   .upload__box-filter:nth-child(3) .upload-form__range::-webkit-slider-thumb {
-    margin-left: 20px;
+    margin-left: 25px;
   }
 
   .upload__box-inner {

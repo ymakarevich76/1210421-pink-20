@@ -73,11 +73,12 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
-    padding-top: 183px;
+    padding-top: 185px;
     padding-bottom: 0;
   }
 
   .reviews__title {
+    padding-bottom: 3px;
     font-size: 24px;
   }
 

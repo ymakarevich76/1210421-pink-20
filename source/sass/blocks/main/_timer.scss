@@ -1,6 +1,6 @@
 .timer {
   display: none;
-  padding: 50px 0;
+  padding: 50px 0 95px;
 }
 
 .timer__wrap {
@@ -16,40 +16,44 @@
 
 .timer__pic {
   position: relative;
-}
 
-.timer__pic::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 57px;
-  left: 18px;
-  width: 202px;
-  height: 202px;
-  border: 16px solid $base-pink;
-  border-radius: 50%;
-}
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 57px;
+    left: 18px;
+    width: 202px;
+    height: 202px;
+    border: 16px solid $base-pink;
+    border-radius: 50%;
+  }
 
-.timer__pic::after {
-  content: "24";
-  display: block;
-  position: absolute;
-  top: 70px;
-  left: 65px;
-  font-family: $ff-main;
-  font-size: 96px;
-  line-height: 163px;
-  font-weight: bold;
-  color: $base-pink;
+  &::after {
+    content: "24";
+    display: block;
+    position: absolute;
+    top: 75px;
+    left: 65px;
+    font-family: $ff-main;
+    font-size: 96px;
+    line-height: 163px;
+    font-weight: bold;
+    color: $base-pink;
+  }
 }
 
 .timer__title {
+  margin-top: 45px;
+  margin-bottom: 10px;
   font-size: 30px;
   line-height: 36px;
   text-align: left;
 }
 
 .timer__text {
+  margin: 0;
+  margin-bottom: 10px;
   font-family: $ff-main;
   font-size: $fz-main;
   font-weight: 400;
@@ -66,10 +70,75 @@
   .timer {
     display: block;
   }
+
+  .timer__text br:nth-child(2) {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .timer {
+    padding-top: 23px;
+    padding-bottom: 60px;
     background-color: $grey-background;
+  }
+
+  .timer__wrap {
+    display: grid;
+    grid-template-columns: min-content 530px;
+    gap: 72px;
+  }
+
+  .timer__svg {
+    width: 298px;
+    height: 345px;
+  }
+
+  .timer__pic {
+    position: relative;
+
+    &::before {
+      content: "";
+      top: 72px;
+      left: 24px;
+      width: 253px;
+      height: 252px;
+      border-width: 18px;
+    }
+
+    &::after {
+      content: "24";
+      display: block;
+      position: absolute;
+      top: 112px;
+      left: 81px;
+      font-size: 120px;
+      line-height: 163px;
+    }
+  }
+
+  .timer__title {
+    margin-top: 96px;
+    margin-bottom: 25px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .timer__title br {
+    display: none;
+  }
+
+  .timer__text {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .timer__text br {
+    display: none;
+  }
+
+  .timer__text br:nth-child(2) {
+    display: block;
   }
 }
