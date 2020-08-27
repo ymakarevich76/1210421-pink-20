@@ -13,9 +13,8 @@
   padding-bottom: 40px;
 }
 
-.upload__img-tablet,
-.upload__img-desktop {
-  display: none;
+.upload__box-img {
+  width: 100%;
 }
 
 .upload__wrap {
@@ -42,6 +41,11 @@
 
 .upload__box-filter:not(:last-child) {
   margin-right: 35px;
+}
+
+.upload__filter {
+  border: none;
+  padding: 0;
 }
 
 .upload__filter-svg {
@@ -126,38 +130,32 @@
 @media (min-width: $tablet-width) {
   .upload {
     margin-bottom: 36px;
-    padding-top: 58px;
+    padding-top: 57px;
   }
 
   .upload__inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 16px;
+    gap: 18px;
   }
 
   .upload__box:last-child {
     padding-bottom: 32px;
   }
 
-  .upload__box-img {
-    min-width: 300px;
+  .upload__box:last-child .container {
+    padding-right: 12px;
   }
 
-  .upload__img-mobile,
-  .upload__img-desktop {
-    display: none;
-  }
-
-  .upload__img-tablet {
-    display: block;
-    width: 300px;
-    height: 400px;
+  .upload__img {
+    width: 100%;
   }
 
   .upload__wrap {
     display: flex;
     flex-direction: column;
     padding-bottom: 20px;
+    padding-right: 0;
   }
 
   .upload__box-filter {
@@ -166,7 +164,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 24px;
+    margin-bottom: 28px;
 
     &:not(:last-child) {
       margin-right: 0;
@@ -192,14 +190,18 @@
 
   .upload__filter {
     display: block;
-    margin-left: 22px;
+    margin-left: 7px;
     margin-top: -3px;
+  }
+
+  .upload__filter--margin {
+    margin-left: 15px;
   }
 
   .upload-form__range {
     position: relative;
-    top: -7px;
-    right: 4px;
+    top: -3px;
+    right: 7px;
     width: 202px;
   }
 
@@ -212,7 +214,7 @@
   }
 
   .upload__box-filter:nth-child(3) .upload-form__range::-webkit-slider-thumb {
-    margin-left: 5px;
+    margin-left: 2px;
   }
 
   .upload-form__range--none {
@@ -234,13 +236,13 @@
 
 @media (min-width: $desktop-width) {
   .upload {
-    margin: 0 130px 99px;
+    margin: 0 130px 98px;
   }
 
   .upload__inner {
     display: grid;
-    grid-template-columns: min-content 1fr;
-    gap: 60px;
+    grid-template-columns: 410px 1fr;
+    gap: 20px;
   }
 
   .upload__box:last-child {
@@ -250,7 +252,7 @@
   }
 
   .upload__box-img {
-    margin-right: 20px;
+    margin-right: 49px;
     margin-left: 60px;
   }
 
@@ -258,17 +260,17 @@
     padding-bottom: 133px;
   }
 
-  .upload__box .container {
-    padding: 0;
-  }
-
   .upload__box-filter {
     min-width: 410px;
   }
 
   .upload__filter {
-    margin-left: 8px;
+    margin-left: 0;
     margin-top: -2px;
+  }
+
+  .upload__filter--margin {
+    margin-left: 10px;
   }
 
   .upload__box-filter::after {
@@ -281,8 +283,8 @@
   }
 
   .upload-form__range {
-    width: 288px;
-    right: 20px;
+    width: 290px;
+    right: 25px;
   }
 
   .upload__box-filter:nth-child(1) .upload-form__range::-webkit-slider-thumb {
@@ -307,9 +309,10 @@
   .upload__box-btn {
     min-width: 182px;
     margin-top: 0;
+    margin-left: 0;
   }
 
   .upload__box-btn:first-child {
-    margin-right: 35px;
+    margin-right: 45px;
   }
 }

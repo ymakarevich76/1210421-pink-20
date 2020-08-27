@@ -3,6 +3,10 @@
   padding-bottom: 34px;
 }
 
+.reviews__icons {
+  display: none;
+}
+
 .reviews__list {
   margin-bottom: 30px;
 }
@@ -73,8 +77,34 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
-    padding-top: 185px;
+    padding-top: 72px;
     padding-bottom: 0;
+  }
+
+  .reviews__icons {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 50px;
+  }
+
+  .icons__quotes {
+    fill: $special-color-quotes;
+  }
+
+  .icons__left,
+  .icons__right {
+    position: absolute;
+    top: 142px;
+    fill: $c-main-toggle;
+  }
+
+  .icons__left {
+    left: 130px;
+  }
+
+  .icons__right {
+    right: 130px;
   }
 
   .reviews__title {
