@@ -75,7 +75,23 @@
     background-color: $c-main;
   }
 
+  &::-moz-range-track {
+    height: 2px;
+    background-color: $c-main;
+  }
+
   &::-webkit-slider-thumb {
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid $base-pink;
+    background-color: $basic-white;
+    margin-top: -6px;
+    margin-left: 80px;
+  }
+
+  &::-moz-range-thumb {
     appearance: none;
     width: 14px;
     height: 14px;

@@ -89,6 +89,7 @@
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
     background-position: top;
     overflow: hidden;
+    height: 729px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg") no-repeat;
@@ -98,6 +99,7 @@
 
     &--pdb-49 {
       padding-top: 94px;
+      height: 440px;
     }
 
     &--pdb-15 {
@@ -180,6 +182,7 @@
   .intro {
     background: url("../img/bg-back-desktop@1x.jpg") no-repeat;
     background-position: 50% 0;
+    height: 853px;
 
     @media (min-resolution: 2dppx) {
       background: url("../img/bg-back-desktop@2x.jpg") no-repeat;
@@ -188,6 +191,7 @@
     }
 
     &--pdb-49 {
+      height: 395px;
       padding-top: 169px;
       padding-bottom: 90px;
       display: flex;
@@ -195,6 +199,7 @@
     }
 
     &--pdb-15 {
+      height: 395px;
       padding-top: 169px;
       padding-bottom: 89px;
     }
