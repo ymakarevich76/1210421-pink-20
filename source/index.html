@@ -13,11 +13,15 @@
         <div class="container page-header__inner">
         <div class="page-header__wrap page-header__wrap--active">
           <a class="page-header__logo">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-              <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Pink">
-            </picture>
+            <svg class="logoMob" width="74" height="23">
+              <use xlink:href="img/sprite.svg#icon-loginMob"></use>
+            </svg>
+            <svg class="logoTab" width="145" height="40">
+              <use xlink:href="img/sprite.svg#icon-loginTab"></use>
+            </svg>
+            <svg class="logoDesk" width="147" height="40">
+              <use xlink:href="img/sprite.svg#icon-loginDesk"></use>
+            </svg>
           </a>
           <button class="page-header__toggle page-header__toggle--opened" arial-label="Открыть меню" type="button"></button>
         </div>
@@ -176,12 +180,12 @@
             <svg class="icons__quotes" width="79" height="64">
               <use xlink:href="img/sprite.svg#icon-quotes"></use>
             </svg>
-            <a href="#" class="icons__left">
+            <a href="#" class="icons__left" aria-label="Стрелка влево">
               <svg width="22" height="42">
                 <use xlink:href="img/sprite.svg#icon-left"></use>
               </svg>
             </a>
-            <a href="#"class="icons__right">
+            <a href="#" class="icons__right" aria-label="Стрелка влево">
               <svg width="22" height="42">
                 <use xlink:href="img/sprite.svg#icon-right"></use>
               </svg>
@@ -198,9 +202,18 @@
               </div>
             </div>
             <p class="reviews__toggles slider__toggles">
-              <button class="slider__toggle slider__toggle--current" type="button" aria-label="Первый слайд"></button>
+              <label>
+                <input type="radio" class="slider__toggle slider__toggle--current">
+              </label>
+              <label>
+                <input type="radio" class="slider__toggle">
+              </label>
+              <label>
+                <input type="radio" class="slider__toggle">
+              </label>
+              <!-- <button class="slider__toggle slider__toggle--current" type="button" aria-label="Первый слайд"></button>
               <button class="slider__toggle" type="button" aria-label="Второй слайд"></button>
-              <button class="slider__toggle" type="button" aria-label="Третий слайд"></button>
+              <button class="slider__toggle" type="button" aria-label="Третий слайд"></button> -->
             </p>
           </div>
         </section>
@@ -267,7 +280,7 @@
                     </svg>
                   </td>
                   <td class="price__filter">
-                    <p class="price__filter-name">Смайлики</p>
+                    <p class="price__filter-name">Смайлики</p> 
                     <svg class="price__table-svg price__table-svg--yes" width="22" height="16">
                       <use xlink:href="img/sprite.svg#icon-yes"></use>
                     </svg>
@@ -351,10 +364,16 @@
       <footer class="page-footer">
         <div class="page-footer__wrapper container">
           <a class="page-footer__logo">
-            <picture>
+            <svg class="logoMobFooter" width="145" height="40">
+              <use xlink:href="img/sprite.svg#icon-loginMobFooter"></use>
+            </svg>
+            <svg class="logoDeskFooter" width="147" height="40">
+              <use xlink:href="img/sprite.svg#icon-loginDeskFooter"></use>
+            </svg>
+            <!-- <picture>
               <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
               <img src="img/logo-pink-blue-mobile.svg" width="74" height="23" alt="Логотип Pink">
-            </picture>
+            </picture> -->
           </a>
           <div class="page-footer__social social">
             <ul class="social__list list-reset">

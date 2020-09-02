@@ -50,11 +50,17 @@
 
 .upload__filter-svg {
   fill: $c-main-toggle;
+
+  &:hover {
+    fill: $c-main-opacityIcon;
+  }
+
+  &:active {
+    fill: $base-pink;
+  }
 }
 
-.upload__filter-svg--pink {
-  width: 44px;
-  height: 44px;
+.upload__filter-svg--active {
   fill: $base-pink;
 }
 
@@ -89,6 +95,10 @@
     background-color: $basic-white;
     margin-top: -6px;
     margin-left: 80px;
+
+    &:active {
+      background-color: $base-pink;
+    }
   }
 
   &::-moz-range-thumb {
@@ -100,21 +110,15 @@
     background-color: $basic-white;
     margin-top: -6px;
     margin-left: 80px;
+
+    &:active {
+      background-color: $base-pink;
+    }
   }
 }
 
 .upload-form__range--none {
   display: none;
-}
-
-.upload__filter-svg--width24 {
-  width: 48px;
-  height: 48px;
-}
-
-.upload__filter-svg--width16 {
-  width: 32px;
-  height: 32px;
 }
 
 .upload__box:last-child {
@@ -128,12 +132,35 @@
   margin-left: 5px;
   border-color: $base-pink;
   color: $base-pink;
+
+  &:hover {
+    background-color: $base-pink;
+    color: $basic-white;
+  }
+
+  &:active {
+    background-color: $base-pink;
+    color: $basic-white-opacity;
+  }
 }
 
 .upload__box-btn--disabled {
   margin-top: 0;
   border-color: $c-main-opacity;
   color: $c-main-opacity;
+
+  &:hover {
+    background-color: transparent;
+    border-color: $c-main-toggle;
+    color: $c-main-toggle;
+  }
+
+  &:active {
+    background-color: $c-main;
+    color: $basic-white;
+    opacity: 0.3;
+    border: none;
+  }
 }
 
 .upload__box-inner {
@@ -244,7 +271,6 @@
   }
 
   .upload__filter svg {
-
     fill: #d22856;
   }
 

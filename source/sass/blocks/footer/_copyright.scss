@@ -27,6 +27,14 @@
   width: 41px;
   height: 41px;
   fill: $base-pink;
+
+  &:hover {
+    fill: $c-main;
+  }
+
+  &:active {
+    fill: $c-main-toggle;
+  }
 }
 
 @media (min-width: $tablet-width) {

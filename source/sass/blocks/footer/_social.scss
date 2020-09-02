@@ -26,6 +26,14 @@
   background: $basic-white;
   border: 3px solid $c-main-opacity;
   border-radius: 50%;
+
+  &:hover {
+    border-color: $c-main;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .social__svg {

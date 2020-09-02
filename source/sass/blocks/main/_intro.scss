@@ -54,6 +54,16 @@
 .intro-box__btn {
   min-width: 280px;
   margin-bottom: 32px;
+
+  &:hover {
+    background-color: $basic-white;
+    color: $base-pink;
+  }
+
+  &:active {
+    background-color: $basic-white;
+    color: $base-pink-opacity;
+  }
 }
 
 .intro-box__icon {

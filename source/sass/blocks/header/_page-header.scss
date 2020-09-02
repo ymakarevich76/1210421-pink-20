@@ -20,9 +20,23 @@
   align-items: center;
 }
 
-.page-header__logo img {
+.logoMob {
   width: 74px;
   height: 23px;
+  fill: $basic-white;
+}
+
+.logoTab,
+.logoDesk {
+  display: none;
+}
+
+.page-header__logo:hover svg {
+  fill: $base-pink;
+}
+
+.page-header__logo:active svg {
+  fill: $special-white;
 }
 
 .page-header__toggle {
@@ -81,6 +95,26 @@
   }
 }
 
+.page-header__toggle--opened:hover::before {
+  background-color: $base-pink;
+  box-shadow: 0 10px 0 0 $base-pink, 0 20px 0 0 $base-pink;
+}
+
+.page-header__toggle--closed:hover::before,
+.page-header__toggle--closed:hover::after {
+  background-color: $base-pink;
+}
+
+.page-header__toggle--opened:active:before {
+  background-color: $base-pink-opacity;
+  box-shadow: 0 10px 0 0 $base-pink-opacity, 0 20px 0 0 $base-pink-opacity;
+}
+
+.page-header__toggle--closed:active::before,
+.page-header__toggle--closed:active::after {
+  background-color: $base-pink-opacity;
+}
+
 .page-header__wrap--active {
   background-color: $c-main;
   border-top: 1px solid $special-white;
@@ -90,7 +124,6 @@
 @media (min-width: $tablet-width) {
   .page-header__wrap {
     height: 110px;
-    padding-right: 0;
   }
 
   .page-header .container {
@@ -101,10 +134,16 @@
     margin-top: -15px;
   }
 
-  .page-header__logo img {
+  .logoTab {
     display: block;
     width: 145px;
     height: 40px;
+    fill: $basic-white;
+  }
+
+  .logoMob,
+  .logoDesk {
+    display: none;
   }
 
   .page-header__toggle {
@@ -127,10 +166,16 @@
     padding: 0 20px;
   }
 
-  .page-header__logo img {
+  .logoDesk {
     display: block;
     width: 147px;
     height: 40px;
+    fill: $basic-white;
+  }
+  
+  .logoTab,
+  .logoMob {
+    display: none;
   }
 
   .page-header__inner {

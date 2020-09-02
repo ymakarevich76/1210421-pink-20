@@ -10,9 +10,22 @@
   margin-bottom: 37px;
 }
 
-.page-footer__logo img {
+.logoMobFooter {
   width: 145px;
   height: 40px;
+  fill: $c-main;
+}
+
+.logoDeskFooter {
+  display: none;
+}
+
+.page-footer__logo:hover svg {
+  fill: $base-pink;
+}
+
+.page-footer__logo:active svg {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
@@ -37,7 +50,13 @@
     justify-content: center;
   }
 
-  .page-footer__logo img {
+  .logoDeskFooter {
+    display: block;
     width: 147px;
+    fill: $c-main;
+  }
+  
+  .logoMobFooter {
+    display: none;
   }
 }

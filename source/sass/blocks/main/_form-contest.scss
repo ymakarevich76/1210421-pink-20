@@ -41,6 +41,14 @@
   text-transform: initial;
   color: $c-main;
 
+  &:hover {
+    border-color: $c-main;
+  }
+
+  &:active {
+    border-color: $base-pink;
+  }
+
   &::placeholder {
     color: $c-main;
   }
@@ -143,11 +151,11 @@
   .form-contest__box-icon {
     display: block;
     position: absolute;
-    top: 0;
-    right: 0;
-    background-color: $special-grey-border;
-    width: 60px;
-    height: 60px;
+    top: 2px;
+    right: 2px;
+    background-color: #e5e5e5;
+    width: 58px;
+    height: 58px;
   }
 
   .form-contest__box-phone {

@@ -92,6 +92,17 @@
   left: 12px;
 }
 
+
+.progress__text--checkbox:hover::before,
+.progress__text--radio:hover::before {
+  border-color: $c-main;
+}
+
+.progress__text--checkbox:active::before,
+.progress__text--radio:active::before {
+  border-color: $base-pink;
+}
+
 .progress__checkbox:checked + .progress__text--checkbox::after {
   border-left: 2px solid $base-pink;
   border-bottom: 2px solid $base-pink;

@@ -33,6 +33,14 @@
   color: $basic-white;
   text-transform: uppercase;
   text-decoration: none;
+
+  &:hover {
+    color: $base-pink;
+  }
+
+  &:active {
+    color: $base-pink-opacity;
+  }
 }
 
 .main-nav--js {
@@ -75,6 +83,10 @@
     font-weight: 400;
     line-height: 18px;
     text-transform: none;
+
+    &:active {
+      color: $special-white;
+    }
   }
 
   .nav-list__link--active {
