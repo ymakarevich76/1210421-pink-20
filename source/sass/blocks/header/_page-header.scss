@@ -89,10 +89,10 @@
     transform: rotate(-45deg);
   }
 
-  &:active::before,
-  &:active::after {
-    background-color: fade($basic-white, 30%);
-  }
+  // &:active::before,
+  // &:active::after {
+  //   background-color: fade($basic-white, 30%);
+  // }
 }
 
 .page-header__toggle--opened:hover::before {
@@ -105,7 +105,7 @@
   background-color: $base-pink;
 }
 
-.page-header__toggle--opened:active:before {
+.page-header__toggle--opened:active::before {
   background-color: $base-pink-opacity;
   box-shadow: 0 10px 0 0 $base-pink-opacity, 0 20px 0 0 $base-pink-opacity;
 }
@@ -172,7 +172,7 @@
     height: 40px;
     fill: $basic-white;
   }
-  
+
   .logoTab,
   .logoMob {
     display: none;
