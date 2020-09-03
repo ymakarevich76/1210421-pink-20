@@ -64,6 +64,22 @@ a {
   line-height: 30px;
   text-transform: uppercase;
   background-color: $special-green-btn;
+
+  &:hover {
+    background-color: $special-darkgreen-btn;
+    border-color: $special-darkgreen-btn;
+  }
+
+  &:active {
+    background-color: $special-darkgreen-btn;
+    border-color: $special-darkgreen-btn;
+    color: $basic-white-opacity;
+  }
+
+  &:disabled {
+    background-color: $special-grey-border;
+    border-color: $special-grey-border;
+  }
 }
 
 .title-1 {

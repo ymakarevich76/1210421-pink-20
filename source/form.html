@@ -13,13 +13,17 @@
         <div class="container page-header__inner">
         <div class="page-header__wrap page-header__wrap--active">
           <a class="page-header__logo">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-              <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Pink">
-            </picture>
+            <svg class="logoMob" width="74" height="23">
+              <use xlink:href="img/sprite.svg#icon-loginMob"></use>
+            </svg>
+            <svg class="logoTab" width="145" height="40">
+              <use xlink:href="img/sprite.svg#icon-loginTab"></use>
+            </svg>
+            <svg class="logoDesk" width="147" height="40">
+              <use xlink:href="img/sprite.svg#icon-loginDesk"></use>
+            </svg>
           </a>
-          <button class="page-header__toggle page-header__toggle--margin page-header__toggle--opened" arial-label="Открыть меню" type="button"></button>
+          <button class="page-header__toggle page-header__toggle--opened" arial-label="Открыть меню" type="button"></button>
         </div>
         <nav class="main-nav">
           <div class="main-nav__wrapper">
@@ -31,7 +35,7 @@
                 <a href="photo.html" class="nav-list__link">Фотографии</a>
               </li>
               <li class="nav-list__item">
-                <a href="form.html" class="nav-list__link nav-list__link--active">Конкурс</a>
+                <a href="form.html" class="nav-list__link">Конкурс</a>
               </li>
               <li class="nav-list__item">
                 <a href="#" class="nav-list__link">HTML Academy</a>
@@ -185,10 +189,16 @@
       <footer class="page-footer">
         <div class="page-footer__wrapper container">
           <a class="page-footer__logo">
-            <picture>
+            <svg class="logoMobFooter" width="145" height="40">
+              <use xlink:href="img/sprite.svg#icon-loginMobFooter"></use>
+            </svg>
+            <svg class="logoDeskFooter" width="147" height="40">
+              <use xlink:href="img/sprite.svg#icon-loginDeskFooter"></use>
+            </svg>
+            <!-- <picture>
               <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
               <img src="img/logo-pink-blue-mobile.svg" width="74" height="23" alt="Логотип Pink">
-            </picture>
+            </picture> -->
           </a>
           <div class="page-footer__social social">
             <ul class="social__list list-reset">

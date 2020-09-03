@@ -32,6 +32,15 @@
   font-weight: 300;
   text-align: center;
   color: $base-pink;
+
+  &:hover {
+    color: $c-main;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: $c-main-toggle;
+  }
 }
 
 

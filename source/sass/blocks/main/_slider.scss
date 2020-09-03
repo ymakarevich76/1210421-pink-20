@@ -28,6 +28,16 @@
     background-color: transparent;
     border: 3px solid $c-main;
   }
+
+  &:hover {
+    background-color: $c-main-toggleOpacity;
+    border-color: $c-main-toggleOpacity;
+  }
+
+  &:active {
+    background-color: $c-main-opacity;
+    border-color: $c-main-opacity;
+  }
 }
 
 @media (min-width: $desktop-width) {

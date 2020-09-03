@@ -97,6 +97,14 @@
     position: absolute;
     top: 142px;
     fill: $c-main-toggle;
+
+    &:hover {
+      fill: $c-main-toggleOpacity;
+    }
+
+    &:active {
+      fill: $c-main-opacity;
+    }
   }
 
   .icons__left {
