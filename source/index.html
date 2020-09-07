@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.min.css">
   </head>
   <body class="page__body">
     <div class="wrapper">
@@ -181,45 +180,45 @@
               <use xlink:href="img/sprite.svg#icon-quotes"></use>
             </svg>
           </div>
-          <div class="slideshow-wrap">
-            <input type="radio" id="button-1" name="controls" checked>
+          <div class="slideshow-wrap1">
+            <input class="slideshow-wrap1__btn1" type="radio" id="button-1" name="controls" checked="checked"/>
             <label for="button-1"></label>
-            <input type="radio" id="button-2" name="controls">
+            <input class="slideshow-wrap1__btn2" type="radio" id="button-2" name="controls"/>
             <label for="button-2"></label>
-            <input type="radio" id="button-3" name="controls">
+            <input class="slideshow-wrap1__btn3" type="radio" id="button-3" name="controls"/>
             <label for="button-3"></label>
-            <label for="button-1" class="arrows" id="arrow-1">
+            <label class="slideshow-wrap1__arrows slideshow-wrap1__arrow--1" for="button-1" id="arrow-1">
               <svg width="22" height="42">
                 <use xlink:href="img/sprite.svg#icon-right"></use>
               </svg>
             </label>
-            <label for="button-2" class="arrows" id="arrow-2">
+            <label class="slideshow-wrap1__arrows slideshow-wrap1__arrow--2" for="button-2" id="arrow-2">
               <svg width="22" height="42">
                 <use xlink:href="img/sprite.svg#icon-right"></use>
               </svg>
             </label>
-            <label for="button-3" class="arrows" id="arrow-3">
+            <label class="slideshow-wrap1__arrows slideshow-wrap1__arrow--3" for="button-3" id="arrow-3">
               <svg width="22" height="42">
                 <use xlink:href="img/sprite.svg#icon-right"></use>
               </svg>
             </label>
-            <div class="slideshow-inner">
+            <div class="slideshow-inner1">
                 <ul class="slider1">
-                    <li class="slides slide1">
+                    <li class="slides-reviews slide1">
                       <div class="reviews__title-wrap">
                         <h3 class="reviews__title title-2">Николай Петров</h3>
                         <p class="reviews__description">25 лет, водитель трамвая</p>
                       </div>
                       <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
                     </li>
-                    <li class="slides slide2">
+                    <li class="slides-reviews slide2">
                       <div class="reviews__title-wrap">
                         <h3 class="reviews__title title-2">Александр Демидов</h3>
                         <p class="reviews__description">43 года, водитель трамвая</p>
                       </div>
                       <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
                     </li>
-                    <li class="slides slide3">
+                    <li class="slides-reviews slide3">
                       <div class="reviews__title-wrap">
                         <h3 class="reviews__title title-2">Василий Тунеядцев</h3>
                         <p class="reviews__description">28 лет, водитель трамвая</p>
@@ -228,7 +227,7 @@
                     </li>
                 </ul>
             </div>
-          </div>
+        </div>
         </section>
 
         <section class="price">
@@ -239,15 +238,14 @@
             </svg>
           </div>
 
-          <div class="slideshow-wrap">
-            <input type="radio" id="button-4" name="controls">
-            <label for="button-4"></label>
-            <input type="radio" id="button-5" name="controls"> <!--checked-->
-            <label for="button-5"></label>
-            <input type="radio" id="button-6" name="controls">
-            <label for="button-6"></label>
-
-            <div class="slideshow-inner">
+          <div class="slideshow-wrap2">
+            <input class="slideshow-wrap2__btn1" type="radio" id="btn-1" name="controls">
+            <label for="btn-1"></label>
+            <input class="slideshow-wrap2__btn2" type="radio" id="btn-2" name="controls" checked>
+            <label for="btn-2"></label>
+            <input class="slideshow-wrap2__btn3" type="radio" id="btn-3" name="controls">
+            <label for="btn-3"></label>
+            <div class="slideshow-inner2">
               <div class="slider2">
                 <table class="price__table">
                     <tr class="price__table-box">
@@ -330,6 +328,7 @@
                 </table>
               </div>
             </div>
+          </div>
         </section>
 
         <section class="contacts">

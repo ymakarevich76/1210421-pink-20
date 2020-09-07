@@ -6,12 +6,12 @@
   position: relative;
 }
 
-.price .slideshow-wrap {
+.price .slideshow-wrap2 {
   height: 406px;
   padding: 0;
 }
 
-.price .slideshow-wrap label:not(.arrows) {
+.price .slideshow-wrap2 label:not(.arrows) {
   bottom: 3px;
 }
 
@@ -227,11 +227,11 @@
 @media (min-width: $desktop-width) {
   .price {
     margin-bottom: 60px;
-    padding-bottom: 95px;
+    padding-bottom: 0;
   }
 
-  .price .slideshow-wrap {
-    height: 335px;
+  .price .slideshow-wrap2 {
+    height: 430px;
     padding: 0;
   }
 
