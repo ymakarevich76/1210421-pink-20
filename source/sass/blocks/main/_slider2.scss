@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.slideshow-wrap2 {
+  display: block;
+  height: 242px;
+  min-width: 320px;
+  max-width: 940px;
+  margin: auto;
+  position: relative;
+  padding: 0 20px;
+}
+
+.slideshow-inner2 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider2 {
+  list-style: none;
+  height: 100%;
+  width: 500%;
+  overflow: hidden;
+  position: relative;
+  left: 0;
+  display: flex;
+  transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.slides-reviews {
+  width: 20%;
+  height: 200px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.slideshow-wrap2 input[type="radio"] {
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  z-index: 100;
+  visibility: hidden;
+}
+
+.slideshow-wrap2 label {
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  z-index: 100;
+  width: 6px;
+  height: 6px;
+  background-color: $c-main-toggle;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.slideshow-wrap2 label:active {
+  bottom: 0;
+}
+
+.slideshow-wrap2 .slideshow-wrap2__btn1:checked ~ label[for="btn-1"] {
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+  border: 3px solid $c-main;
+  bottom: 0;
+}
+
+.slideshow-wrap2 .slideshow-wrap2__btn2:checked ~ label[for="btn-2"] {
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+  border: 3px solid $c-main;
+  bottom: 0;
+  margin-left: -6px;
+}
+
+.slideshow-wrap2 .slideshow-wrap2__btn3:checked ~ label[for="btn-3"] {
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+  border: 3px solid $c-main;
+  bottom: 0;
+}
+
+.slideshow-wrap2 label[for="btn-1"] {
+  margin-left: -30px;
+}
+
+.slideshow-wrap2 label[for="btn-2"] {
+  margin-left: 0;
+}
+
+.slideshow-wrap2 label[for="btn-3"]:not(.slideshow-wrap2__arrows) {
+  margin-left: 23px;
+}
+
+.slideshow-wrap2 .slideshow-wrap2__btn1:checked ~ .slideshow-inner2 > .slider2 {
+  left: 0;
+}
+
+.slideshow-wrap2 .slideshow-wrap2__btn2:checked ~ .slideshow-inner2 > .slider2 {
+  left: -100%;
+}
+
+.slideshow-wrap2 .slideshow-wrap2__btn3:checked ~ .slideshow-inner2 > .slider2 {
+  left: -200%;
+}
+
+label svg {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .slideshow-wrap2 label {
+    position: absolute;
+    bottom: 12px;
+  }
+
+  .slideshow-wrap2 label:active {
+    bottom: 12px;
+  }
+
+  .slideshow-wrap2 label[for="btn-2"] {
+    margin-left: -2px;
+  }
+
+  .slideshow-wrap2 .slideshow-wrap2__btn1:checked ~ label[for="btn-1"] {
+    bottom: 9px;
+  }
+
+  .slideshow-wrap2 .slideshow-wrap2__btn2:checked ~ label[for="btn-2"] {
+    bottom: 9px;
+    margin-left: -2px;
+  }
+
+  .slideshow-wrap2 .slideshow-wrap2__btn3:checked ~ label[for="btn-3"] {
+    bottom: 9px;
+  }
+
+  .slideshow-wrap2 .slideshow-wrap2__btn2:checked ~ .slideshow-inner2 > .slider2 {
+    left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slideshow-wrap2 {
+    height: 223px;
+    padding: 0;
+  }
+
+  .slideshow-wrap2 label {
+    display: none;
+  }
+
+  label svg {
+    display: block;
+    fill: $c-main-toggle;
+  }
+
+  label:hover svg {
+    fill: $c-main-toggleOpacity;
+  }
+
+  label:active svg {
+    fill: $c-main-opacity;
+  }
+}

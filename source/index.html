@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.min.css">
   </head>
   <body class="page__body">
     <div class="wrapper">
@@ -180,42 +179,55 @@
             <svg class="icons__quotes" width="79" height="64">
               <use xlink:href="img/sprite.svg#icon-quotes"></use>
             </svg>
-            <a href="#" class="icons__left" aria-label="Стрелка влево">
-              <svg width="22" height="42">
-                <use xlink:href="img/sprite.svg#icon-left"></use>
-              </svg>
-            </a>
-            <a href="#" class="icons__right" aria-label="Стрелка влево">
+          </div>
+          <div class="slideshow-wrap1">
+            <input class="slideshow-wrap1__btn1" type="radio" id="button-1" name="controls" checked="checked"/>
+            <label for="button-1"></label>
+            <input class="slideshow-wrap1__btn2" type="radio" id="button-2" name="controls"/>
+            <label for="button-2"></label>
+            <input class="slideshow-wrap1__btn3" type="radio" id="button-3" name="controls"/>
+            <label for="button-3"></label>
+            <label class="slideshow-wrap1__arrows slideshow-wrap1__arrow--1" for="button-1" id="arrow-1">
               <svg width="22" height="42">
                 <use xlink:href="img/sprite.svg#icon-right"></use>
               </svg>
-            </a>
-          </div>
-          <div class="container slider">
-            <div class="reviews__list slider__list">
-              <div class="reviews__item slider__item">
-                <div class="reviews__title-wrap">
-                  <h3 class="reviews__title title-2">Николай Петров</h3>
-                  <p class="reviews__description">25 лет, водитель трамвая</p>
-                </div>
-                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-              </div>
+            </label>
+            <label class="slideshow-wrap1__arrows slideshow-wrap1__arrow--2" for="button-2" id="arrow-2">
+              <svg width="22" height="42">
+                <use xlink:href="img/sprite.svg#icon-right"></use>
+              </svg>
+            </label>
+            <label class="slideshow-wrap1__arrows slideshow-wrap1__arrow--3" for="button-3" id="arrow-3">
+              <svg width="22" height="42">
+                <use xlink:href="img/sprite.svg#icon-right"></use>
+              </svg>
+            </label>
+            <div class="slideshow-inner1">
+                <ul class="slider1">
+                    <li class="slides-reviews slide1">
+                      <div class="reviews__title-wrap">
+                        <h3 class="reviews__title title-2">Николай Петров</h3>
+                        <p class="reviews__description">25 лет, водитель трамвая</p>
+                      </div>
+                      <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                    </li>
+                    <li class="slides-reviews slide2">
+                      <div class="reviews__title-wrap">
+                        <h3 class="reviews__title title-2">Александр Демидов</h3>
+                        <p class="reviews__description">43 года, водитель трамвая</p>
+                      </div>
+                      <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                    </li>
+                    <li class="slides-reviews slide3">
+                      <div class="reviews__title-wrap">
+                        <h3 class="reviews__title title-2">Василий Тунеядцев</h3>
+                        <p class="reviews__description">28 лет, водитель трамвая</p>
+                      </div>
+                      <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                    </li>
+                </ul>
             </div>
-            <p class="reviews__toggles slider__toggles">
-              <label>
-                <input type="radio" class="slider__toggle slider__toggle--current">
-              </label>
-              <label>
-                <input type="radio" class="slider__toggle">
-              </label>
-              <label>
-                <input type="radio" class="slider__toggle">
-              </label>
-              <!-- <button class="slider__toggle slider__toggle--current" type="button" aria-label="Первый слайд"></button>
-              <button class="slider__toggle" type="button" aria-label="Второй слайд"></button>
-              <button class="slider__toggle" type="button" aria-label="Третий слайд"></button> -->
-            </p>
-          </div>
+        </div>
         </section>
 
         <section class="price">
@@ -225,96 +237,98 @@
               <polygon points="1200,0 0,0 0,94.074 "/>
             </svg>
           </div>
-          <div class="slider">
-            <table class="price__table">
-              <thead class="price__table-head">
-                <tr class="price__table-box">
-                  <th class="price__header visually-hidden">БАЗА
-                  </th>
-                  <th class="price__header">БАЗА<br>
-                    <span class="price__header-value">1,99 USD</span>
-                  </th>
-                  <th class="price__header price__header--active">СТАНДАРТ<br>
-                    <span class="price__header-value">3,99 USD</span>
-                  </th>
-                  <th class="price__header">АНЛИМ<br>
-                    <span class="price__header-value">9,99 USD</span>
-                  </th>
-                </tr>
-              </thead>
-              <tbody class="price__table-body">
-                <tr class="price__table-box">
-                  <td class="price__filter">Розовый фильтр
-                  </td>
-                  <td class="price__filter">
-                    <p class="price__filter-name">Розовый фильтр</p>
-                    <svg class="price__table-svg price__table-svg--yes" width="22" height="16">
-                      <use xlink:href="img/sprite.svg#icon-yes"></use>
-                    </svg>
-                  </td>
-                  <td class="price__filter">
-                    <p class="price__filter-name">Розовый фильтр</p>
-                    <svg class="price__table-svg price__table-svg--yes" width="22" height="16">
-                      <use xlink:href="img/sprite.svg#icon-yes"></use>
-                    </svg>
-                  </td>
-                  <td class="price__filter">
-                    <p class="price__filter-name">Розовый фильтр</p>
-                    <svg class="price__table-svg price__table-svg--yes" width="22" height="16">
-                      <use xlink:href="img/sprite.svg#icon-yes"></use>
-                    </svg>
-                  </td>
-                </tr>
-                <tr class="price__table-box">
-                  <td class="price__filter">Смайлики</td>
-                  <td class="price__filter">
-                    <p class="price__filter-name">Смайлики</p>
-                    <svg class="price__table-svg price__table-svg--no" width="27" height="27">
-                      <use xlink:href="img/sprite.svg#icon-no"></use>
-                    </svg>
-                  </td>
-                  <td class="price__filter">
-                    <p class="price__filter-name">Смайлики</p>
-                    <svg class="price__table-svg price__table-svg--yes" width="22" height="16">
-                      <use xlink:href="img/sprite.svg#icon-yes"></use>
-                    </svg>
-                  </td>
-                  <td class="price__filter">
-                    <p class="price__filter-name">Смайлики</p>
-                    <svg class="price__table-svg price__table-svg--yes" width="22" height="16">
-                      <use xlink:href="img/sprite.svg#icon-yes"></use>
-                    </svg>
-                  </td>
-                </tr>
-                <tr class="price__table-box">
-                  <td class="price__filter">Комментарии</td>
-                  <td class="price__filter">
-                    <p class="price__filter-name">Комментарии</p>
-                    <svg class="price__table-svg price__table-svg--no" width="27" height="27">
-                      <use xlink:href="img/sprite.svg#icon-no"></use>
-                    </svg>
-                  </td>
-                  <td class="price__filter">
-                    <p class="price__filter-name">Комментарии</p>
-                    <svg class="price__table-svg price__table-svg--no" width="27" height="27">
-                      <use xlink:href="img/sprite.svg#icon-no"></use>
-                    </svg>
-                  </td>
-                  <td class="price__filter">
-                    <p class="price__filter-name">Комментарии</p>
-                    <svg class="price__table-svg price__table-svg--yes" width="22" height="16">
-                      <use xlink:href="img/sprite.svg#icon-yes"></use>
-                    </svg>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+
+          <div class="slideshow-wrap2">
+            <input class="slideshow-wrap2__btn1" type="radio" id="btn-1" name="controls">
+            <label for="btn-1"></label>
+            <input class="slideshow-wrap2__btn2" type="radio" id="btn-2" name="controls" checked>
+            <label for="btn-2"></label>
+            <input class="slideshow-wrap2__btn3" type="radio" id="btn-3" name="controls">
+            <label for="btn-3"></label>
+            <div class="slideshow-inner2">
+              <div class="slider2">
+                <table class="price__table">
+                    <tr class="price__table-box">
+                      <td class="price__header visually-hidden">БАЗА
+                      </td>
+                      <td class="price__header">БАЗА<br>
+                        <span class="price__header-value">1,99 USD</span>
+                      </td>
+                      <td class="price__header price__header--active">СТАНДАРТ<br>
+                        <span class="price__header-value">3,99 USD</span>
+                      </td>
+                      <td class="price__header">АНЛИМ<br>
+                        <span class="price__header-value">9,99 USD</span>
+                      </td>
+                    </tr>
+                    <tr class="price__table-box">
+                      <td class="price__filter">Розовый фильтр
+                      </td>
+                      <td class="price__filter">
+                        <p class="price__filter-name">Розовый фильтр</p>
+                        <svg class="price__table-svg price__table-svg--yes" width="22" height="16">
+                          <use xlink:href="img/sprite.svg#icon-yes"></use>
+                        </svg>
+                      </td>
+                      <td class="price__filter">
+                        <p class="price__filter-name">Розовый фильтр</p>
+                        <svg class="price__table-svg price__table-svg--yes" width="22" height="16">
+                          <use xlink:href="img/sprite.svg#icon-yes"></use>
+                        </svg>
+                      </td>
+                      <td class="price__filter">
+                        <p class="price__filter-name">Розовый фильтр</p>
+                        <svg class="price__table-svg price__table-svg--yes" width="22" height="16">
+                          <use xlink:href="img/sprite.svg#icon-yes"></use>
+                        </svg>
+                      </td>
+                    </tr>
+                    <tr class="price__table-box">
+                      <td class="price__filter">Смайлики</td>
+                      <td class="price__filter">
+                        <p class="price__filter-name">Смайлики</p>
+                        <svg class="price__table-svg price__table-svg--no" width="27" height="27">
+                          <use xlink:href="img/sprite.svg#icon-no"></use>
+                        </svg>
+                      </td>
+                      <td class="price__filter">
+                        <p class="price__filter-name">Смайлики</p>
+                        <svg class="price__table-svg price__table-svg--yes" width="22" height="16">
+                          <use xlink:href="img/sprite.svg#icon-yes"></use>
+                        </svg>
+                      </td>
+                      <td class="price__filter">
+                        <p class="price__filter-name">Смайлики</p>
+                        <svg class="price__table-svg price__table-svg--yes" width="22" height="16">
+                          <use xlink:href="img/sprite.svg#icon-yes"></use>
+                        </svg>
+                      </td>
+                    </tr>
+                    <tr class="price__table-box">
+                      <td class="price__filter">Комментарии</td>
+                      <td class="price__filter">
+                        <p class="price__filter-name">Комментарии</p>
+                        <svg class="price__table-svg price__table-svg--no" width="27" height="27">
+                          <use xlink:href="img/sprite.svg#icon-no"></use>
+                        </svg>
+                      </td>
+                      <td class="price__filter">
+                        <p class="price__filter-name">Комментарии</p>
+                        <svg class="price__table-svg price__table-svg--no" width="27" height="27">
+                          <use xlink:href="img/sprite.svg#icon-no"></use>
+                        </svg>
+                      </td>
+                      <td class="price__filter">
+                        <p class="price__filter-name">Комментарии</p>
+                        <svg class="price__table-svg price__table-svg--yes" width="22" height="16">
+                          <use xlink:href="img/sprite.svg#icon-yes"></use>
+                        </svg>
+                      </td>
+                    </tr>
+                </table>
+              </div>
+            </div>
           </div>
-          <p class="price__toggles slider__toggles">
-            <button class="slider__toggle" type="button" aria-label="Первый слайд"></button>
-            <button class="slider__toggle slider__toggle--current" type="button" aria-label="Второй слайд"></button>
-            <button class="slider__toggle" type="button" aria-label="Третий слайд"></button>
-          </p>
         </section>
 
         <section class="contacts">
