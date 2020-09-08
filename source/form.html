@@ -4,9 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>HTML Academy: Пинк</title>
+    <link rel="preload" href="css/styles.min.css" as="styles">
+    <link rel="preload" href="js/script.min.js" as="script">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
     <link rel="stylesheet" href="css/styles.min.css">
   </head>
-  <body class="page__body">
+  <body class="page-body">
     <div class="wrapper">
       <header class="page-header">
         <div class="container page-header__inner">
@@ -120,12 +123,12 @@
               </fieldset>
             </div>
 
-            <fieldset class="fieldset form-contest__item form-contest__item--contacts">
+            <fieldset class="fieldset form-contest__item form-contest__item--contacts progress">
               <legend class="title-4 progress__title progress__title--display">Контактная информация</legend>
               <div class="container form-contest__box-wrap">
                 <div class="form-contest__box">
                   <label for="phone" class="form-contest__label title-4">Номер телефона</label>
-                  <input class="form-contest__placeholder title-4" type="text" name="phone" id="phone" placeholder="Номер, пожалуйста">
+                  <input class="form-contest__placeholder title-4" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста" required>
                   <div class="form-contest__box-icon">
                     <svg class="form-contest__box-phone" width="20" height="20">
                       <use xlink:href="img/sprite.svg#icon-phone"></use>
@@ -134,7 +137,7 @@
                 </div>
                 <div class="form-contest__box">
                   <label for="email" class="form-contest__label title-4">Адрес почты</label>
-                  <input class="form-contest__placeholder title-4" type="text" name="email" id="email" placeholder="Введите почту *">
+                  <input class="form-contest__placeholder title-4" type="email" name="email" id="email" placeholder="Введите почту *" required>
                   <div class="form-contest__box-icon">
                     <svg class="form-contest__box-mail" width="18" height="14">
                       <use xlink:href="img/sprite.svg#icon-mail"></use>
@@ -170,11 +173,11 @@
               <legend class="title-4 form-text__title">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
               <div class="container">
                 <label>
-                  <textarea class="form-text__textarea form-contest__placeholder title-4" id="text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                  <textarea class="form-text__textarea form-contest__placeholder title-4" id="text" placeholder="Можно прям в красках, не стесняясь в выражениях" aria-label="Опиши свои эмоции"></textarea>
                 </label>
               </div>
             </fieldset>
-            <div class="form-text__wrap container">
+            <div class="form-textwrap container">
               <button type="submit" class="btn-2 btn form-contest__btn">Отправить форму</button>
 
               <small class="form-contest__legend title-4">
@@ -194,10 +197,6 @@
             <svg class="logoDeskFooter" width="147" height="40">
               <use xlink:href="img/sprite.svg#icon-loginDeskFooter"></use>
             </svg>
-            <!-- <picture>
-              <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
-              <img src="img/logo-pink-blue-mobile.svg" width="74" height="23" alt="Логотип Pink">
-            </picture> -->
           </a>
           <div class="page-footer__social social">
             <ul class="social__list list-reset">
@@ -229,7 +228,7 @@
           </div>
           <div class="page-footer__copyright copyright">
             <span class="copyright__text">Разработано</span>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="Ссылка академии">
               <svg class="copyright__svg" width="27" height="34">
                 <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
               </svg>
@@ -264,8 +263,6 @@
         </div>
       </div>
     </div>
-    <script src="js/script.js"></script>
-    <script src="js/modal-good.js"></script>
-    <script src="js/modal-error.js"></script>
+    <!-- <script src="js/script.min.js"></script> -->
   </body>
 </html>

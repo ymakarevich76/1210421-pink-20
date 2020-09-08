@@ -4,9 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>HTML Academy: Пинк</title>
+    <link rel="preload" href="css/styles.min.css" as="styles">
+    <link rel="preload" href="js/script.min.js" as="script">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
     <link rel="stylesheet" href="css/styles.min.css">
   </head>
-  <body class="page__body">
+  <body class="page-body">
     <div class="wrapper">
       <header class="page-header">
         <div class="container page-header__inner">
@@ -69,19 +72,19 @@
 
           <div class="container intro-box intro-box--bcground">
             <div class="intro-box__install">
-              <a class="intro-box__btn btn" href="#">Скачать приложение</a>
+              <a class="intro-box__btn btn" href="https://play.google.com/store/apps/details?id=com.wPinkFilterPhotoEditor_9151138&hl=ru">Скачать приложение</a>
               <div class="intro-box__icon">
-                <a class="intro__link" href="#">
+                <a class="intro__link" href="https://www.apple.com/ios/app-store/">
                   <svg class="intro__link-svg" width="47" height="56">
                     <use xlink:href="img/sprite.svg#icon-iphone"></use>
                   </svg>
                 </a>
-                <a class="intro__link" href="#">
+                <a class="intro__link" href="https://play.google.com/store?hl=ru">
                   <svg class="intro__link-svg" width="43" height="47">
                     <use xlink:href="img/sprite.svg#icon-android"></use>
                   </svg>
                 </a>
-                <a class="intro__link" href="#">
+                <a class="intro__link" href="https://www.microsoft.com/ru-ru/store/apps/windows">
                   <svg class="intro__link-svg"  width="44" height="41">
                     <use xlink:href="img/sprite.svg#icon-microsoft"></use>
                   </svg>
@@ -187,17 +190,17 @@
             <label for="button-2"></label>
             <input class="slideshow-wrap1__btn3" type="radio" id="button-3" name="controls"/>
             <label for="button-3"></label>
-            <label class="slideshow-wrap1__arrows slideshow-wrap1__arrow--1" for="button-1" id="arrow-1">
+            <label class="slideshow-wrap1__arrows slideshow-wrap1__arrows--1" for="button-1" id="arrow-1">
               <svg width="22" height="42">
                 <use xlink:href="img/sprite.svg#icon-right"></use>
               </svg>
             </label>
-            <label class="slideshow-wrap1__arrows slideshow-wrap1__arrow--2" for="button-2" id="arrow-2">
+            <label class="slideshow-wrap1__arrows slideshow-wrap1__arrows--2" for="button-2" id="arrow-2">
               <svg width="22" height="42">
                 <use xlink:href="img/sprite.svg#icon-right"></use>
               </svg>
             </label>
-            <label class="slideshow-wrap1__arrows slideshow-wrap1__arrow--3" for="button-3" id="arrow-3">
+            <label class="slideshow-wrap1__arrows slideshow-wrap1__arrows--3" for="button-3" id="arrow-3">
               <svg width="22" height="42">
                 <use xlink:href="img/sprite.svg#icon-right"></use>
               </svg>
@@ -428,6 +431,6 @@
         </div> <!--/page-footer__wrapper-->
       </footer>
     </div><!--/wrap-->
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

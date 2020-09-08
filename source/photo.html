@@ -4,9 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>HTML Academy: Пинк</title>
+    <link rel="preload" href="css/styles.min.css" as="styles">
+    <link rel="preload" href="js/script.min.js" as="script">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
     <link rel="stylesheet" href="css/styles.min.css">
   </head>
-  <body class="page__body">
+  <body class="page-body">
     <div class="wrapper">
       <header class="page-header">
         <div class="container page-header__inner">
@@ -92,7 +95,7 @@
             </div>
           </div><!--/user-photo-->
 
-          <div class="user-photo__wrap">
+          <div class="user-photowrap">
             <div class="user-photo">
               <a class="user-photo__thumb">
                 <picture>
@@ -245,8 +248,8 @@
                 </div>
               </div>
             </div>
-            <p class="user-photo__text">Затмите их всех!<br>
-              Выкладывайте все, что накопилось в телефоне!</p>
+            <p class="user-phototext">Затмите их всех!<br>
+            Выкладывайте все, что накопилось в телефоне!</p>
           </div>
         </section>
         <section class="upload">
@@ -294,7 +297,7 @@
                 </div> <!--/upload__wrap-->
                 <div class="container upload__box-inner">
                   <button class="upload__box-btn btn" type="submit">Запостить</button>
-                  <button class="upload__box-btn btn upload__box-btn--disabled" type="submit">Отмена</button>
+                  <button class="upload__box-btn btn upload__box-btn--disabled" type="reset">Отмена</button>
                 </div>
               </form>
             </div> <!--/upload__box-->
@@ -355,6 +358,6 @@
         </div> <!--/page-footer__wrapper-->
       </footer>
     </div><!--/wrap-->
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

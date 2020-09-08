@@ -186,24 +186,24 @@ label .slideshow-wrap1__arrows {
     margin-top: 0;
   }
 
-  .slideshow-wrap1__btn1:checked ~ .slideshow-wrap1__arrow--2,
-  .slideshow-wrap1__btn2:checked ~ .slideshow-wrap1__arrow--3 {
+  .slideshow-wrap1__btn1:checked ~ .slideshow-wrap1__arrows--2,
+  .slideshow-wrap1__btn2:checked ~ .slideshow-wrap1__arrows--3 {
     right: -127px;
     display: block;
   }
 
-  .slideshow-wrap1__btn2:checked ~ .slideshow-wrap1__arrow--1,
-  .slideshow-wrap1__btn3:checked ~ .slideshow-wrap1__arrow--2 {
+  .slideshow-wrap1__btn2:checked ~ .slideshow-wrap1__arrows--1,
+  .slideshow-wrap1__btn3:checked ~ .slideshow-wrap1__arrows--2 {
     left: -55px;
     display: block;
     transform: scaleX(-1);
   }
 
-  .slideshow-wrap1__btn2:checked ~ .slideshow-wrap1__arrow--1 {
+  .slideshow-wrap1__btn2:checked ~ .slideshow-wrap1__arrows--1 {
     left: -90px;
   }
 
-  .slideshow-wrap1__btn3:checked ~ .slideshow-wrap1__arrow--2 {
+  .slideshow-wrap1__btn3:checked ~ .slideshow-wrap1__arrows--2 {
     left: -105px;
   }
 

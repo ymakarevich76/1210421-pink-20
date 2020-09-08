@@ -2,6 +2,7 @@
   position: relative;
   top: 0;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat center 1px;
+  background-size: 100%;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
@@ -23,6 +24,12 @@
 
 .intro-box__wrapper {
   padding-top: 90px;
+}
+
+.intro-inner img {
+  margin: 0 auto;
+  position: relative;
+  left: -31px;
 }
 
 .intro-box__title {
@@ -153,7 +160,7 @@
   .intro-inner {
     position: absolute;
     top: 185px;
-    left: -20px;
+    left: 10px;
     width: 700px;
   }
 

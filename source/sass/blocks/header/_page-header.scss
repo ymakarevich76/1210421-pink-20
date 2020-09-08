@@ -41,7 +41,7 @@
 
 .page-header__toggle {
   position: relative;
-  display: block;
+  display: none;
   width: 70px;
   height: 50px;
   background-color: transparent;
@@ -52,6 +52,10 @@
   &:active {
     background-color: transparent;
   }
+}
+
+.page-header__toggle--block {
+  display: block;
 }
 
 .page-header__toggle--opened {
@@ -88,11 +92,6 @@
   &::after {
     transform: rotate(-45deg);
   }
-
-  // &:active::before,
-  // &:active::after {
-  //   background-color: fade($basic-white, 30%);
-  // }
 }
 
 .page-header__toggle--opened:hover::before {
