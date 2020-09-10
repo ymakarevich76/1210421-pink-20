@@ -21,20 +21,20 @@
   justify-content: space-between;
   align-items: center;
   margin-left: 10px;
+
+  &:hover svg {
+    fill: $c-main;
+  }
+
+  &:active svg {
+    fill: $c-main-toggle;
+  }
 }
 
 .copyright__svg {
   width: 41px;
   height: 41px;
   fill: $base-pink;
-
-  &:hover {
-    fill: $c-main;
-  }
-
-  &:active {
-    fill: $c-main-toggle;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -42,6 +42,7 @@
     display: flex;
     justify-content: flex-end;
     margin-bottom: 30px;
+    margin-top: -7px;
   }
 
   .copyright__link {
@@ -57,7 +58,7 @@
   .copyright {
     display: flex;
     justify-content: center;
-    padding-left: 15px;
+    padding-left: 5px;
   }
 
   .copyright__text {

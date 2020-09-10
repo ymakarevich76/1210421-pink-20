@@ -44,7 +44,6 @@ const scripts = () => {
 
 exports.scripts = scripts;
 
-
 //Images
 const images = () => {
   return gulp.src("source/img/*")
@@ -115,12 +114,10 @@ exports.clean = clean;
 //Copy
 const copy = () => {
   return gulp.src([
-    "source/fonts/*.{woff, woff2}",
-    "source/img/**",
-    "source/js/*",
-    "source/*.ico"
+    "source/fonts/*.{woff,woff2}",
+    "source/img/**"
   ], {
-    base: "build"
+    base: "source"
   })
   .pipe(gulp.dest("build"));
 };
@@ -131,15 +128,19 @@ exports.copy = copy;
 // Html
 const html = () => {
   return gulp.src("source/*.html")
-  // .pipe(htmlmin())
-  // .pipe(rename({
-  //   suffix: "-min"
-  // }))
   .pipe(gulp.dest("build"))
   .pipe(sync.stream());
 };
 
 exports.html = html;
+
+// htmlMinify
+const htmlMinify = () => {
+  return gulp.src("source/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest("build"))
+};
+exports.htmlMinify = htmlMinify;
 
 
 // Build task
@@ -150,7 +151,7 @@ const build = gulp.series(
   scripts,
   images,
   sprite,
-  html
+  htmlMinify
 );
 
 exports.build = build;

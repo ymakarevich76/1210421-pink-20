@@ -35,7 +35,14 @@
   position: relative;
 }
 
-.checkbox-wrap {
+.progress__checkbox,
+.progress__radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.progress__checkbox-wrap {
   padding-bottom: 52px;
 
   &:last-child {
@@ -43,7 +50,7 @@
   }
 }
 
-.radio-wrap {
+.progress__radio-wrap {
   padding-bottom: 45px;
 }
 
@@ -92,7 +99,6 @@
   left: 12px;
 }
 
-
 .progress__text--checkbox:hover::before,
 .progress__text--radio:hover::before {
   border-color: $c-main;
@@ -101,6 +107,11 @@
 .progress__text--checkbox:active::before,
 .progress__text--radio:active::before {
   border-color: $base-pink;
+}
+
+.progress__text--checkbox:disabled::before,
+.progress__text--radio:disabled::before {
+  opacity: 0.5;
 }
 
 .progress__checkbox:checked + .progress__text--checkbox::after {
@@ -114,6 +125,25 @@
   border-radius: 50%;
 }
 
+.progress__checkbox:not(:disabled):active + label::before,
+.progress__radio:not(:disabled):active + label::before {
+  border-color: $base-pink;
+}
+
+.progress__checkbox:focus + label::before,
+.progress__radio:focus + label::before {
+  border-color: $base-pink;
+}
+
+.progress__radio:focus:not(:checked) + label::before {
+  border-color: $base-pink;
+}
+
+.progress__checkbox:disabled + label::before,
+.progress__radio:disabled + label::before {
+  background-color: $special-grey-border;
+}
+
 @media (min-width: $tablet-width) {
   .progress {
     background-color: $basic-white;
@@ -122,10 +152,6 @@
 
   .progress__list {
     padding-top: 49px;
-  }
-
-  .fieldset--grey .progress--1 {
-    margin-bottom: 45px;
   }
 
   .progress--2 {
@@ -144,7 +170,7 @@
     display: block;
   }
 
-  .checkbox-wrap:last-child {
+  .progress__checkbox-wrap:last-child {
     padding-bottom: 38px;
   }
 
@@ -175,14 +201,14 @@
   }
 
   .progress__title--padd-39 {
-    padding: 0 17px;
+    padding: 0 19px;
   }
 
-  .radio-wrap {
-    padding-left: 15px;
+  .progress__radio-wrap {
+    padding-left: 17px;
   }
 
-  .checkbox-wrap {
+  .progress__checkbox-wrap {
     width: 31%;
     margin-right: -2%;
     // padding-bottom: 20px;

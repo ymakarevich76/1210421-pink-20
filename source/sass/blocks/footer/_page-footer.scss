@@ -7,16 +7,16 @@
 .page-footer__logo {
   display: flex;
   justify-content: center;
-  margin-bottom: 37px;
+  margin-bottom: 38px;
 }
 
-.logoMobFooter {
+.page-footer__logo-svgmob {
   width: 145px;
   height: 40px;
   fill: $c-main;
 }
 
-.logoDeskFooter {
+.page-footer__logo-svgdesk {
   display: none;
 }
 
@@ -50,13 +50,13 @@
     justify-content: center;
   }
 
-  .logoDeskFooter {
+  .page-footer__logo-svgdesk {
     display: block;
     width: 147px;
     fill: $c-main;
   }
 
-  .logoMobFooter {
+  .page-footer__logo-svgmob {
     display: none;
   }
 }

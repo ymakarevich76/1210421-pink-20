@@ -1,0 +1,47 @@
+.fieldset--grey {
+  background-color: $grey-background;
+}
+
+@media (min-width: $tablet-width) {
+  .fieldset--grey {
+    background-color: $basic-white;
+  }
+
+  .fieldset--grey .progress--1 {
+    margin-bottom: 45px;
+  }
+
+  .fieldset--grey .form-contest__item {
+    border: 2px solid $special-grey-border;
+    padding: 0 38px 13px;
+    margin: 0 20px 58px 20px;
+  }
+
+  .fieldset--grey .form-contest__item.progress--1 {
+    margin-bottom: 46px;
+  }
+
+  .fieldset:nth-of-type(2) {
+    order: -2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .fieldset:nth-child(1) {
+    margin-top: 13px;
+  }
+
+  .fieldset--grey .form-contest__item {
+    margin-bottom: 20px;
+    padding-bottom: 9px;
+  }
+
+  .fieldset--grey:nth-child(2) .form-contest__item {
+    margin-bottom: 12px;
+    padding: 0 0 0 40px;
+  }
+
+  .fieldset:nth-child(2) {
+    grid-column: 1/3;
+  }
+}

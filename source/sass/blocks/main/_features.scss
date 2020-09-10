@@ -12,7 +12,7 @@
 
 .features__list {
   margin-bottom: 43px;
-  padding-top: 47px;
+  padding-top: 48px;
 }
 
 .features__item:not(:last-child) {
@@ -41,7 +41,7 @@
 }
 
 .features__photo {
-  height: 278px;
+  height: 276px;
   overflow: hidden;
 }
 
@@ -54,7 +54,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .features-wrap {
+  .features__wrap {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
@@ -103,6 +103,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+    padding-top: 13px;
   }
 
   .features__display {
