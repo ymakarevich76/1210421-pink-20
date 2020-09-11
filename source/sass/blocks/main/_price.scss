@@ -36,12 +36,12 @@
   &:not(:last-child) {
     border-right: 2px solid $grey-background;
   }
-  
+
   &:not(:first-child),
   &--active {
     background-color: $c-main;
   }
-  
+
   &--active::after {
     content: "хит";
     display: flex;
@@ -156,6 +156,7 @@
 
     &:first-child {
       background-color: $grey-background;
+      display: table-cell;
     }
 
     &--active::after {
@@ -193,10 +194,6 @@
     &:first-child {
       display: table-cell;
     }
-  }
-
-  .price__header:first-child {
-    display: table-cell;
   }
 
   .price__toggles {

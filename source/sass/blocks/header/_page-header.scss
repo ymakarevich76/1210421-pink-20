@@ -71,7 +71,7 @@
       box-shadow: 0 10px 0 0 $basic-white, 0 20px 0 0 $basic-white;
       margin-right: 10px;
     }
-  
+
     &:hover::before {
       background-color: $base-pink;
       box-shadow: 0 10px 0 0 $base-pink, 0 20px 0 0 $base-pink;
@@ -99,7 +99,7 @@
       transform: rotate(45deg);
       box-shadow: none;
     }
-  
+
     &::after {
       transform: rotate(-45deg);
     }

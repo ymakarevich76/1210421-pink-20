@@ -166,10 +166,6 @@ label .slideshow-wrap1__arrows {
 
   .slideshow-wrap1__arrows svg {
     display: block;
-  }
-
-  .slideshow-wrap1__arrows svg {
-    display: block;
     fill: $c-main-toggle;
   }
 
@@ -177,12 +173,12 @@ label .slideshow-wrap1__arrows {
     &:hover svg {
       fill: $c-main-toggleOpacity;
     }
-  
+
     &:active svg {
       fill: $c-main-opacity;
     }
   }
-  
+
   label.slideshow-wrap1__arrows {
     font-size: 25px;
     position: absolute;

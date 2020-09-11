@@ -50,6 +50,15 @@
   cursor: pointer;
   transition: background-color 0.2s;
   bottom: 3px;
+
+  &:hover {
+    background-color: $c-main-toggleOpacity;
+  }
+
+  &:active {
+    bottom: 3px;
+    background-color: $c-main-opacity;
+  }
 }
 
 .slideshow-wrap2 .slideshow-wrap2__btn2--active {
@@ -58,17 +67,6 @@
   background-color: transparent;
   border: 3px solid $c-main;
   bottom: 0;
-}
-
-.slideshow-wrap2 label {
-  &:hover {
-    background-color: $c-main-toggleOpacity;
-  }
-  
-  &:active {
-    bottom: 3px;
-    background-color: $c-main-opacity;
-  }
 }
 
 .slideshow-wrap2 .slideshow-wrap2__btn1:checked ~ label[for="btn-1"] {
@@ -171,16 +169,6 @@ label svg {
 
   .slideshow-wrap2 label {
     display: none;
-  }
-
-  .slideshow-wrap2 label {
-    &:hover svg {
-      fill: $c-main-toggleOpacity;
-    }
-  
-    &:active svg {
-      fill: $c-main-opacity;
-    }
   }
 }
 

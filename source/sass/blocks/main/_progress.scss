@@ -29,32 +29,7 @@
   &--radio {
     padding-left: 70px;
   }
-}
 
-.progress__item {
-  position: relative;
-}
-
-.progress__checkbox,
-.progress__radio {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
-}
-
-.progress__checkbox-wrap {
-  padding-bottom: 52px;
-
-  &:last-child {
-    padding-bottom: 47px;
-  }
-}
-
-.progress__radio-wrap {
-  padding-bottom: 45px;
-}
-
-.progress__text {
   &--checkbox::before,
   &--radio::before {
     content: "";
@@ -115,6 +90,29 @@
   &--radio:disabled::before {
     opacity: 0.5;
   }
+}
+
+.progress__item {
+  position: relative;
+}
+
+.progress__checkbox,
+.progress__radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.progress__checkbox-wrap {
+  padding-bottom: 52px;
+
+  &:last-child {
+    padding-bottom: 47px;
+  }
+}
+
+.progress__radio-wrap {
+  padding-bottom: 45px;
 }
 
 .progress__checkbox:checked + .progress__text--checkbox::after {

@@ -15,10 +15,10 @@
   &:nth-child(2) {
     margin-bottom: 21px;
   }
-  
+
   &--element {
     position: relative;
-  
+
     &::before {
       content: "ПАНОРАМА ДНЯ";
       display: inline-block;
@@ -29,7 +29,7 @@
       width: 140px;
       height: 36px;
       padding-top: 6px;
-  
+
       font-family: $ff-main;
       font-size: 12px;
       line-height: 24px;
@@ -155,12 +155,12 @@
       padding-top: 6px;
       padding-right: 30px;
     }
-  
+
     &--element::before {
       position: absolute;
       top: 57px;
     }
-  
+
     &--element .photo__userphoto-like {
       padding-top: 19px;
 
@@ -262,17 +262,17 @@
 
   .photo__userphoto {
     margin-bottom: 23px;
-    
+
     &--element::before {
       position: absolute;
       top: 54px;
       right: 130px;
     }
-  
+
     &--element .photo__userphoto-block {
       margin: 0 110px;
     }
-  
+
     &--element .photo__userphoto-box {
       padding-left: 27px;
       min-height: 96px;
