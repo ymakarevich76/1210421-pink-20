@@ -41,7 +41,7 @@
   }
 }
 
-.intro__box-title br {
+.intro__box-title br:first-child {
   display: none;
   font-size: 0;
   line-height: 0;
@@ -155,7 +155,7 @@
     padding: 83px 55px 79px;
   }
 
-  .intro__box-title br {
+  .intro__box-title br:first-child {
     display: block;
   }
 
