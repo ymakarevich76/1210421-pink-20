@@ -31,7 +31,7 @@
 .form-contest__placeholder {
   padding: 14px 20px;
   border: 2px solid $special-grey-border;
-  border-radius: 1px;
+  border-radius: 2px;
 
   font-size: 18px;
   text-transform: initial;
@@ -66,8 +66,8 @@
 
 .form-contest__placeholder:not(.form-text__textarea):focus,
 .form-contest__placeholder:not(.form-text__textarea):active {
-  border: none;
-  outline: 2px solid $base-pink;
+  outline: none;
+  border-color: $base-pink;
 }
 
 @media (min-width: $tablet-width) {

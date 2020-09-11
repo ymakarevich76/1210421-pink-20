@@ -68,7 +68,7 @@
         <section class="photo">
           <h2 class="visually-hidden">Примеры фотографий</h2>
           <div class="photo__userphoto photo__userphoto--element">
-            <a class="photo__userphoto-img">
+            <a class="photo__userphoto-img" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
@@ -85,7 +85,7 @@
               </p>
               <p class="photo__userphoto-description">
                 Прыгать или нет? Напишите в
-                комментарии свой совет и<br>
+                комментарии свой совет и <br>
                 смотрите прямую трансляцию в
                 перископе, задавайте свои вопросы!</p>
               <div class="photo__userphoto-like">
@@ -100,7 +100,7 @@
 
           <div class="photo__userphotowrap">
             <div class="photo__userphoto">
-              <a class="photo__userphoto-thumb">
+              <a class="photo__userphoto-thumb" href="#">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
@@ -126,7 +126,7 @@
               </div>
             </div>
             <div class="photo__userphoto">
-              <a class="photo__userphoto-thumb">
+              <a class="photo__userphoto-thumb" href="#">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@1x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
@@ -152,7 +152,7 @@
               </div>
             </div>
             <div class="photo__userphoto">
-              <a class="photo__userphoto-thumb">
+              <a class="photo__userphoto-thumb" href="#">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
@@ -177,7 +177,7 @@
               </div>
             </div>
             <div class="photo__userphoto">
-              <a class="photo__userphoto-thumb">
+              <a class="photo__userphoto-thumb" href="#">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
@@ -202,7 +202,7 @@
               </div>
             </div>
             <div class="photo__userphoto">
-              <a class="photo__userphoto-thumb">
+              <a class="photo__userphoto-thumb" href="#">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
@@ -227,7 +227,7 @@
               </div>
             </div>
             <div class="photo__userphoto">
-              <a class="photo__userphoto-thumb">
+              <a class="photo__userphoto-thumb" href="#">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
@@ -272,32 +272,36 @@
             </div> <!--/upload__box-->
             <div class="upload__box">
               <form class="upload__form" action="https://echo.htmlacademy.ru" method="POST">
-                <div class="upload__wrap">
-                  <div class="upload__box-filter">
-                    <button type="button" class="upload__filter" aria-label="Фильтр обрезки">
-                      <svg class="upload__filter-svg upload__filter-svg--active" width="48" height="48">
-                        <use xlink:href="img/sprite.svg#icon-crop"></use>
-                      </svg>
-                    </button>
+                <div class="upload__wrap tabs">
+                  <input type="radio" class="upload__filter tab-btn-1" name="tab-btn" id="tab-btn-1" value="" checked>
+                  <label for="tab-btn-1">
+                    <svg class="upload__filter-svg" width="48" height="48">
+                      <use xlink:href="img/sprite.svg#icon-crop"></use>
+                    </svg>
+                  </label>
+                  <input type="radio"  class="upload__filter tab-btn-2" name="tab-btn" id="tab-btn-2" value="">
+                  <label for="tab-btn-2">
+                    <svg class="upload__filter-svg" width="48" height="48">
+                      <use xlink:href="img/sprite.svg#icon-fill"></use>
+                    </svg>
+                  </label>
+                  <input type="radio" class="upload__filter tab-btn-3" name="tab-btn" id="tab-btn-3" value="">
+                  <label for="tab-btn-3">
+                    <svg class="upload__filter-svg upload__filter-svg--width" width="32" height="32">
+                      <use xlink:href="img/sprite.svg#icon-contrast"></use>
+                    </svg>
+                  </label>
+                  <div class="tab__content tab__content--1">
+                    <input type="range" class="upload__form-range upload__form-range--1" min="0" max="100" name="range" step="1">
+                  </div>
+                  <div class="tab__content tab__content--2">
                     <input type="range" class="upload__form-range" min="0" max="100" name="range" step="1">
                   </div>
-                  <div class="upload__box-filter">
-                    <button type="button" class="upload__filter" aria-label="Фильтр насыщенности">
-                      <svg class="upload__filter-svg" width="48" height="48">
-                        <use xlink:href="img/sprite.svg#icon-fill"></use>
-                      </svg>
-                    </button>
-                    <input type="range" class="upload__form-range upload__form-range--none" min="0" max="100" name="range" step="1">
+                  <div class="tab__content tab__content--3">
+                    <input type="range" class="upload__form-range" min="0" max="100" name="range" step="1">
                   </div>
-                  <div class="upload__box-filter">
-                    <button type="button" class="upload__filter upload__filter--margin" aria-label="Фильтр контрастности">
-                      <svg class="upload__filter-svg" width="32" height="32">
-                        <use xlink:href="img/sprite.svg#icon-contrast"></use>
-                      </svg>
-                    </button>
-                    <input type="range" class="upload__form-range upload__form-range--none" min="0" max="100" name="range" step="1">
-                  </div>
-                </div> <!--/upload__wrap-->
+                </div>
+
                 <div class="container upload__box-inner">
                   <button class="upload__box-btn btn" type="submit">Запостить</button>
                   <button class="upload__box-btn btn upload__box-btn--disabled" type="reset">Отмена</button>
