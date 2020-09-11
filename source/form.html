@@ -4,40 +4,45 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>HTML Academy: Пинк</title>
+    <link rel="preload" href="css/styles.min.css" as="style">
+    <link rel="preload" href="js/script.min.js" as="script">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
     <link rel="stylesheet" href="css/styles.min.css">
   </head>
-  <body class="page__body">
+  <body class="page-body">
     <div class="wrapper">
       <header class="page-header">
         <div class="container page-header__inner">
         <div class="page-header__wrap page-header__wrap--active">
-          <a class="page-header__logo">
-            <svg class="logoMob" width="74" height="23">
+          <a href="index.html" class="page-header__logo">
+            <svg class="page-header__logo-mob" width="74" height="23">
               <use xlink:href="img/sprite.svg#icon-loginMob"></use>
             </svg>
-            <svg class="logoTab" width="145" height="40">
+            <svg class="page-header__logo-tab" width="145" height="40">
               <use xlink:href="img/sprite.svg#icon-loginTab"></use>
             </svg>
-            <svg class="logoDesk" width="147" height="40">
+            <svg class="page-header__logo-desk" width="147" height="40">
               <use xlink:href="img/sprite.svg#icon-loginDesk"></use>
             </svg>
           </a>
-          <button class="page-header__toggle page-header__toggle--opened" arial-label="Открыть меню" type="button"></button>
+          <button class="page-header__toggle page-header__toggle--opened" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
         </div>
         <nav class="main-nav">
           <div class="main-nav__wrapper">
-            <ul class="main-nav__list nav-list list-reset">
-              <li class="nav-list__item">
-                <a href="index.html" class="nav-list__link">Главная</a>
+            <ul class="main-nav__list list-reset">
+              <li class="main-nav__item">
+                <a href="index.html" class="main-nav__link">Главная</a>
               </li>
-              <li class="nav-list__item">
-                <a href="photo.html" class="nav-list__link">Фотографии</a>
+              <li class="main-nav__item">
+                <a href="photo.html" class="main-nav__link">Фотографии</a>
               </li>
-              <li class="nav-list__item">
-                <a href="form.html" class="nav-list__link">Конкурс</a>
+              <li class="main-nav__item">
+                <a href="form.html" class="main-nav__link main-nav__link--active">Конкурс</a>
               </li>
-              <li class="nav-list__item">
-                <a href="#" class="nav-list__link">HTML Academy</a>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">HTML Academy</a>
               </li>
             </ul>
           </div>
@@ -50,8 +55,9 @@
         <h1 class="visually-hidden">Заполнение формы</h1>
 
         <section class="intro intro--pdb-15">
-          <div class="container intro-box">
-            <p class="intro-box__title title-1 intro-box__title--lh-33">Конкурс на самое безбашенное путешествие с Пинк</p>
+          <h2 class="visually-hidden">Агитационный блок</h2>
+          <div class="container intro__box">
+            <p class="intro__box-title title-1 intro__box-title--lh-33">Конкурс на самое безбашенное путешествие с Пинк</p>
           </div>
         </section>
 
@@ -67,6 +73,7 @@
         </section>
 
         <section class="form-contest">
+          <h2 class="visually-hidden">Заполнение формы</h2>
           <form class="form-contest__form" action="https://echo.htmlacademy.ru" method="GET">
 
             <fieldset class="fieldset form-contest__item">
@@ -89,30 +96,30 @@
             <div class="fieldset fieldset--grey">
               <fieldset class="form-contest__item progress progress--1">
                   <legend class="title-4 progress__title">Ваши безбашенные<br> достижения в путешествии</legend>
-                <div class="container progress__list-wrap">
+                <div class="container">
                   <ul class="progress__list list-reset">
-                      <li class="progress__item checkbox-wrap">
-                        <input class="visually-hidden progress__checkbox" type="checkbox" name="achiev-1" id="achiev-1" checked>
+                      <li class="progress__item progress__checkbox-wrap">
+                        <input class="progress__checkbox" type="checkbox" name="achiev-1" id="achiev-1" checked>
                         <label for="achiev-1" class="progress__text progress__text--checkbox title-4">Сделал селфи с акулой</label>
                       </li>
-                      <li class="progress__item checkbox-wrap">
-                        <input class="visually-hidden progress__checkbox" type="checkbox" name="achiev-2" id="achiev-2" checked>
+                      <li class="progress__item progress__checkbox-wrap">
+                        <input class="progress__checkbox" type="checkbox" name="achiev-2" id="achiev-2" checked>
                         <label for="achiev-2" class="progress__text progress__text--checkbox title-4">Обгорел на пляже</label>
                       </li>
-                      <li class="progress__item checkbox-wrap">
-                        <input class="visually-hidden progress__checkbox" type="checkbox" name="achiev-3" id="achiev-3">
+                      <li class="progress__item progress__checkbox-wrap">
+                        <input class="progress__checkbox" type="checkbox" name="achiev-3" id="achiev-3">
                         <label for="achiev-3" class="progress__text progress__text--checkbox title-4">Видел Чака Норриса</label>
                       </li>
-                      <li class="progress__item checkbox-wrap">
-                        <input class="visually-hidden progress__checkbox" type="checkbox" name="achiev-4" id="achiev-4">
+                      <li class="progress__item progress__checkbox-wrap">
+                        <input class="progress__checkbox" type="checkbox" name="achiev-4" id="achiev-4">
                         <label for="achiev-4" class="progress__text progress__text--checkbox title-4">Накупил сувениров</label>
                       </li>
-                      <li class="progress__item checkbox-wrap">
-                        <input class="visually-hidden progress__checkbox" type="checkbox" name="achiev-5" id="achiev-5" checked>
+                      <li class="progress__item progress__checkbox-wrap">
+                        <input class="progress__checkbox" type="checkbox" name="achiev-5" id="achiev-5" checked>
                         <label for="achiev-5" class="progress__text progress__text--checkbox title-4">Удержал башню</label>
                       </li>
-                      <li class="progress__item checkbox-wrap">
-                        <input class="visually-hidden progress__checkbox" type="checkbox" name="achiev-6" id="achiev-6">
+                      <li class="progress__item progress__checkbox-wrap">
+                        <input class="progress__checkbox" type="checkbox" name="achiev-6" id="achiev-6">
                         <label for="achiev-6" class="progress__text progress__text--checkbox title-4">Разгромил отель</label>
                       </li>
                   </ul>
@@ -120,12 +127,12 @@
               </fieldset>
             </div>
 
-            <fieldset class="fieldset form-contest__item form-contest__item--contacts">
+            <fieldset class="fieldset form-contest__item form-contest__item--contacts progress">
               <legend class="title-4 progress__title progress__title--display">Контактная информация</legend>
               <div class="container form-contest__box-wrap">
                 <div class="form-contest__box">
                   <label for="phone" class="form-contest__label title-4">Номер телефона</label>
-                  <input class="form-contest__placeholder title-4" type="text" name="phone" id="phone" placeholder="Номер, пожалуйста">
+                  <input class="form-contest__placeholder title-4" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста" required>
                   <div class="form-contest__box-icon">
                     <svg class="form-contest__box-phone" width="20" height="20">
                       <use xlink:href="img/sprite.svg#icon-phone"></use>
@@ -134,7 +141,7 @@
                 </div>
                 <div class="form-contest__box">
                   <label for="email" class="form-contest__label title-4">Адрес почты</label>
-                  <input class="form-contest__placeholder title-4" type="text" name="email" id="email" placeholder="Введите почту *">
+                  <input class="form-contest__placeholder title-4" type="email" name="email" id="email" placeholder="Введите почту *" required>
                   <div class="form-contest__box-icon">
                     <svg class="form-contest__box-mail" width="18" height="14">
                       <use xlink:href="img/sprite.svg#icon-mail"></use>
@@ -149,16 +156,16 @@
                 <legend class="title-4 progress__title progress__title--padd-39">С каким приложением путешествовали?</legend>
                 <div class="container">
                   <ul class="progress__list list-reset">
-                    <li class="progress__item radio-wrap">
-                      <input class="visually-hidden progress__radio" type="radio" name="ios" value="ios" id="ios" checked>
+                    <li class="progress__item progress__radio-wrap">
+                      <input class="progress__radio" type="radio" name="radio" value="ios" id="ios" checked>
                       <label for="ios" class="progress__text progress__text--radio title-4">Pink для iOS</label>
                     </li>
-                    <li class="progress__item radio-wrap">
-                      <input class="visually-hidden progress__radio" type="radio" name="android" value="android" id="android">
+                    <li class="progress__item progress__radio-wrap">
+                      <input class="progress__radio" type="radio" name="radio" value="android" id="android">
                       <label for="android" class="progress__text progress__text--radio title-4">Pink на Android</label>
                     </li>
-                    <li class="progress__item radio-wrap">
-                      <input class="visually-hidden progress__radio" type="radio" name="windows" value="windows" id="windows">
+                    <li class="progress__item progress__radio-wrap">
+                      <input class="progress__radio" type="radio" name="radio" value="windows" id="windows">
                       <label for="windows" class="progress__text progress__text--radio title-4">Windows Phone</label>
                     </li>
                   </ul>
@@ -170,11 +177,11 @@
               <legend class="title-4 form-text__title">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
               <div class="container">
                 <label>
-                  <textarea class="form-text__textarea form-contest__placeholder title-4" id="text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                  <textarea class="form-text__textarea form-contest__placeholder title-4" id="text" placeholder="Можно прям в красках, не стесняясь в выражениях" aria-label="Опиши свои эмоции"></textarea>
                 </label>
               </div>
             </fieldset>
-            <div class="form-text__wrap container">
+            <div class="form-textwrap container">
               <button type="submit" class="btn-2 btn form-contest__btn">Отправить форму</button>
 
               <small class="form-contest__legend title-4">
@@ -187,17 +194,13 @@
 
       <footer class="page-footer">
         <div class="page-footer__wrapper container">
-          <a class="page-footer__logo">
-            <svg class="logoMobFooter" width="145" height="40">
+          <a href="index.html" class="page-footer__logo">
+            <svg class="page-footer__logo-svgmob" width="145" height="40">
               <use xlink:href="img/sprite.svg#icon-loginMobFooter"></use>
             </svg>
-            <svg class="logoDeskFooter" width="147" height="40">
+            <svg class="page-footer__logo-svgdesk" width="147" height="40">
               <use xlink:href="img/sprite.svg#icon-loginDeskFooter"></use>
             </svg>
-            <!-- <picture>
-              <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
-              <img src="img/logo-pink-blue-mobile.svg" width="74" height="23" alt="Логотип Pink">
-            </picture> -->
           </a>
           <div class="page-footer__social social">
             <ul class="social__list list-reset">
@@ -238,7 +241,7 @@
         </div> <!--/page-footer__wrapper-->
       </footer>
 
-      <div class="modal modal-error">
+      <div class="modal modal__error">
         <div class="modal__wrap container">
         <h2 class="modal__title title-2">Что-то пошло<br> не так!</h2>
         <div class="modal__wrap-text modal__wrap-text--width">
@@ -250,7 +253,7 @@
         </div><!--/modal__wrap-->
       </div>
 
-      <div class="modal modal-good">
+      <div class="modal modal__good">
         <div class="modal__wrap">
         <div class="container modal__inner">
           <h2 class="modal__title title-2">Ваша заявка отправлена</h2>
@@ -264,8 +267,6 @@
         </div>
       </div>
     </div>
-    <script src="js/script.js"></script>
-    <script src="js/modal-good.js"></script>
-    <script src="js/modal-error.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

@@ -1,31 +1,38 @@
 .intro {
   position: relative;
   top: 0;
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center 1px;
+  background: $c-main url("../img/bg-back-mobile@1x.jpg") no-repeat center 1px;
+  background-size: 100%;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-image: $c-main url("../img/bg-back-mobile@2x.jpg");
     background-size: contain;
   }
 
   &--pdb-49 {
-    padding-top: 96px;
-    padding-bottom: 50px;
+    padding-top: 94px;
+    padding-bottom: 49px;
     background-size: cover;
   }
 
   &--pdb-15 {
-    padding-top: 96px;
+    padding-top: 94px;
     padding-bottom: 14px;
     background-size: cover;
   }
 }
 
-.intro-box__wrapper {
-  padding-top: 90px;
+.intro__box-wrapper {
+  padding-top: 89px;
 }
 
-.intro-box__title {
+.intro__inner img {
+  margin: 0 auto;
+  position: relative;
+  left: -31px;
+}
+
+.intro__box-title {
   margin: 0;
   padding-bottom: 29px;
 
@@ -34,24 +41,24 @@
   }
 }
 
-.intro-box__title br {
+.intro__box-title br {
   display: none;
   font-size: 0;
   line-height: 0;
 }
 
-.intro-box--bcground {
+.intro__box--bcground {
   background-color: $dark-grey;
 }
 
-.intro-box__install {
+.intro__box-install {
   padding-top: 28px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.intro-box__btn {
+.intro__box-btn {
   min-width: 280px;
   margin-bottom: 32px;
 
@@ -66,7 +73,7 @@
   }
 }
 
-.intro-box__icon {
+.intro__box-icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,10 +88,9 @@
   padding-top: 10px;
 }
 
-.intro-box__text {
+.intro__box-text {
   margin: 0;
-  padding: 0 20px;
-  padding-bottom: 32px;
+  padding: 0 20px 30px;
 
   font-family: $ff-main;
   font-size: $fz-main;
@@ -96,13 +102,13 @@
 
 @media (min-width: $tablet-width) {
   .intro {
-    background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
+    background: $c-main url("../img/bg-back-tablet@1x.jpg") no-repeat;
     background-position: top;
     overflow: hidden;
     height: 729px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/bg-back-tablet@2x.jpg") no-repeat;
+      background-image: $c-main url("../img/bg-back-tablet@2x.jpg") no-repeat;
       background-position: top;
       overflow: hidden;
     }
@@ -120,49 +126,49 @@
     }
   }
 
-  .intro-box:last-child {
+  .intro__box:last-child {
     background-color: transparent;
   }
 
-  .intro-box__wrapper {
+  .intro__box-wrapper {
     padding-top: 183px;
   }
 
-  .intro-box__title {
+  .intro__box-title {
     display: inline-block;
     font-size: 40px;
     line-height: 48px;
     padding: 20px 55px;
   }
 
-  .intro-box__title--lh-33 {
+  .intro__box-title--lh-33 {
     margin: 0 auto;
     display: inherit;
     font-size: 50px;
     line-height: 68px;
   }
 
-  .intro-box__title--pt100 {
+  .intro__box-title--pt100 {
     padding: 83px 55px 79px;
   }
 
-  .intro-box__title br {
+  .intro__box-title br {
     display: block;
   }
 
-  .intro-inner {
+  .intro__inner {
     position: absolute;
     top: 185px;
-    left: -20px;
+    left: 10px;
     width: 700px;
   }
 
-  .intro-inner img {
+  .intro__inner img {
     width: 100%;
     height: auto;
   }
 
-  .intro-box__install {
+  .intro__box-install {
     width: 300px;
     padding-top: 10px;
     display: flex;
@@ -173,16 +179,16 @@
     background-color: transparent;
   }
 
-  .intro-box__btn {
+  .intro__box-btn {
     min-width: 300px;
     margin-bottom: 45px;
   }
 
-  .intro-box__icon {
-    margin-bottom: 31px;
+  .intro__box-icon {
+    margin-bottom: 25px;
   }
 
-  .intro-box__text {
+  .intro__box-text {
     padding: 0;
     font-size: 18px;
   }
@@ -190,12 +196,12 @@
 
 @media (min-width: $desktop-width) {
   .intro {
-    background: url("../img/bg-back-desktop@1x.jpg") no-repeat;
+    background: $c-main url("../img/bg-back-desktop@1x.jpg") no-repeat;
     background-position: 50% 0;
     height: 853px;
 
     @media (min-resolution: 2dppx) {
-      background: url("../img/bg-back-desktop@2x.jpg") no-repeat;
+      background: $c-main url("../img/bg-back-desktop@2x.jpg") no-repeat;
       background-position: 49% 0%;
       background-size: 221%;
     }
@@ -215,42 +221,42 @@
     }
   }
 
-  .intro-box__wrapper {
+  .intro__box-wrapper {
     padding-top: 210px;
   }
 
-  .intro-box__title {
+  .intro__box-title {
     font-size: 50px;
     line-height: 68px;
     padding: 0 30px;
   }
 
-  .intro-inner {
+  .intro__inner {
     position: absolute;
     top: 208px;
-    left: 147px;
+    left: 178px;
     width: 1050px;
   }
 
-  .intro-inner img {
+  .intro__inner img {
     width: 100%;
     height: auto;
   }
 
-  .intro-box__install {
+  .intro__box-install {
     padding-top: 36px;
   }
 
-  .intro-box__btn {
+  .intro__box-btn {
     font-size: 21px;
     margin-bottom: 67px;
   }
 
-  .intro-box__icon {
-    margin-bottom: 50px;
+  .intro__box-icon {
+    margin-bottom: 45px;
   }
 
-  .intro-box__title--lh-33 {
+  .intro__box-title--lh-33 {
     margin-top: 0;
     font-size: 50px;
     line-height: 68px;

@@ -2,6 +2,8 @@ var header = document.querySelector('.page-header__wrap');
 var navToggle = document.querySelector('.page-header__toggle');
 var nav = document.querySelector('.main-nav');
 
+navToggle.classList.add('page-header__toggle--block');
+nav.classList.add('main-nav--none');
 header.classList.remove('page-header__wrap--active');
 
 navToggle.addEventListener('click', function () {

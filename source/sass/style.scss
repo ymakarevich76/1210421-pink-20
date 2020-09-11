@@ -6,6 +6,7 @@
 @import "base/utilit";
 
 ///////////////////////////////
+@import "blocks/page-body";
 @import "blocks/header/page-header";
 @import "blocks/header/main-nav";
 
@@ -17,11 +18,13 @@
 @import "blocks/main/reviews";
 @import "blocks/main/slider1";
 @import "blocks/main/slider2";
+@import "blocks/main/tabs";
 @import "blocks/main/price";
 @import "blocks/main/contacts";
 @import "blocks/main/map";
 @import "blocks/main/photo";
 @import "blocks/main/upload";
+@import "blocks/main/fieldset";
 @import "blocks/main/form-contest";
 @import "blocks/main/progress";
 @import "blocks/main/form-text";

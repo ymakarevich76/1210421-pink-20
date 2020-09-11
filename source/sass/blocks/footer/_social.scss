@@ -1,12 +1,8 @@
 .social {
-  margin-bottom: 35px;
+  margin-bottom: 37px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.social__item {
-  margin-left: 5px;
 }
 
 .social__list {
@@ -23,7 +19,7 @@
   justify-content: center;
   align-items: center;
 
-  background: $basic-white;
+  background-color: $basic-white;
   border: 3px solid $c-main-opacity;
   border-radius: 50%;
 
@@ -32,6 +28,7 @@
   }
 
   &:active {
+    border-color: $c-main;
     opacity: 0.1;
   }
 }
@@ -39,4 +36,10 @@
 .social__svg {
   fill: $base-pink;
   display: block;
+}
+
+@media (min-width: $desktop-width) {
+  .social__list {
+    min-width: 174px;
+  }
 }
