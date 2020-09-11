@@ -60,13 +60,15 @@
   bottom: 0;
 }
 
-.slideshow-wrap2 label:hover {
-  background-color: $c-main-toggleOpacity;
-}
-
-.slideshow-wrap2 label:active {
-  bottom: 3px;
-  background-color: $c-main-opacity;
+.slideshow-wrap2 label {
+  &:hover {
+    background-color: $c-main-toggleOpacity;
+  }
+  
+  &:active {
+    bottom: 3px;
+    background-color: $c-main-opacity;
+  }
 }
 
 .slideshow-wrap2 .slideshow-wrap2__btn1:checked ~ label[for="btn-1"] {
@@ -126,16 +128,16 @@ label svg {
 
 @media (min-width: $tablet-width) {
   .slideshow-wrap2 {
-    height: 285px;
+    min-height: 285px;
   }
 
   .slideshow-wrap2 label {
     position: absolute;
     bottom: 12px;
-  }
 
-  .slideshow-wrap2 label:active {
-    bottom: 12px;
+    &:active {
+      bottom: 12px;
+    }
   }
 
   .slideshow-wrap2 label[for="btn-2"] {
@@ -171,17 +173,14 @@ label svg {
     display: none;
   }
 
-  label svg {
-    display: block;
-    fill: $c-main-toggle;
-  }
-
-  label:hover svg {
-    fill: $c-main-toggleOpacity;
-  }
-
-  label:active svg {
-    fill: $c-main-opacity;
+  .slideshow-wrap2 label {
+    &:hover svg {
+      fill: $c-main-toggleOpacity;
+    }
+  
+    &:active svg {
+      fill: $c-main-opacity;
+    }
   }
 }
 
