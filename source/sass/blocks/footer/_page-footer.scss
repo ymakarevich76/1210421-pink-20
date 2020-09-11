@@ -8,6 +8,14 @@
   display: flex;
   justify-content: center;
   margin-bottom: 38px;
+
+  &:hover svg {
+    fill: $base-pink;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__logo-svgmob {
@@ -18,14 +26,6 @@
 
 .page-footer__logo-svgdesk {
   display: none;
-}
-
-.page-footer__logo:hover svg {
-  fill: $base-pink;
-}
-
-.page-footer__logo:active svg {
-  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

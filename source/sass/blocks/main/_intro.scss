@@ -80,12 +80,15 @@
   margin-bottom: 14px;
 }
 
-.intro__link:not(:last-child) {
-  margin-right: 35px;
-}
 
-.intro__link:nth-child(3) {
-  padding-top: 10px;
+.intro__link {
+  &:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  &:nth-child(3) {
+    padding-top: 10px;
+  }
 }
 
 .intro__box-text {

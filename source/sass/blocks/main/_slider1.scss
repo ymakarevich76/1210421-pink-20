@@ -164,17 +164,19 @@ label .slideshow-wrap1__arrows {
     display: none;
   }
 
-  label svg {
+  .slideshow-wrap1__arrows svg {
     display: block;
     fill: $c-main-toggle;
   }
 
-  label:hover svg {
-    fill: $c-main-toggleOpacity;
-  }
+  .slideshow-wrap1 .slideshow-wrap1__arrows {
+    &:hover svg {
+      fill: $c-main-toggleOpacity;
+    }
 
-  label:active svg {
-    fill: $c-main-opacity;
+    &:active svg {
+      fill: $c-main-opacity;
+    }
   }
 
   label.slideshow-wrap1__arrows {
@@ -185,10 +187,10 @@ label .slideshow-wrap1__arrows {
     opacity: 0.7;
     cursor: pointer;
     z-index: 1000;
-  }
 
-  label.slideshow-wrap1__arrows:active {
-    margin-top: 0;
+    &:active {
+      margin-top: 0;
+    }
   }
 
   .slideshow-wrap1__btn1:checked ~ .slideshow-wrap1__arrows--2,
