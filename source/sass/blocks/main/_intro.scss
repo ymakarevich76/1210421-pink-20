@@ -108,7 +108,7 @@
     background: $c-main url("../img/bg-back-tablet@1x.jpg") no-repeat;
     background-position: top;
     overflow: hidden;
-    height: 729px;
+    min-height: 729px;
 
     @media (min-resolution: 2dppx) {
       background-image: $c-main url("../img/bg-back-tablet@2x.jpg") no-repeat;
@@ -118,11 +118,11 @@
 
     &--pdb-49 {
       padding-top: 94px;
-      height: 440px;
+      min-height: 440px;
     }
 
     &--pdb-15 {
-      height: auto;
+      min-height: 440px;
       padding-top: 157px;
       padding-bottom: 39px;
       background-size: auto;
@@ -192,7 +192,7 @@
   }
 
   .intro__box-text {
-    padding: 0;
+    padding: 0 0 30px;
     font-size: 18px;
   }
 }
@@ -201,7 +201,7 @@
   .intro {
     background: $c-main url("../img/bg-back-desktop@1x.jpg") no-repeat;
     background-position: 50% 0;
-    height: 853px;
+    min-height: 853px;
 
     @media (min-resolution: 2dppx) {
       background: $c-main url("../img/bg-back-desktop@2x.jpg") no-repeat;
@@ -210,7 +210,7 @@
     }
 
     &--pdb-49 {
-      height: 395px;
+      min-height: 395px;
       padding-top: 169px;
       padding-bottom: 90px;
       display: flex;
@@ -218,7 +218,7 @@
     }
 
     &--pdb-15 {
-      height: 395px;
+      min-height: 395px;
       padding-top: 169px;
       padding-bottom: 89px;
     }

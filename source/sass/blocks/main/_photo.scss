@@ -216,6 +216,7 @@
     margin-left: 20px;
     margin-right: 20px;
     column-gap: 20px;
+    align-items: flex-start;
   }
 
   .photo__userphoto-box {
@@ -245,8 +246,6 @@
 
   .photo__userphoto-text {
     font-size: 18px;
-    grid-column-start: 1;
-    grid-column-end: 3;
     padding: 44px 10px;
   }
 }
@@ -303,8 +302,6 @@
   }
 
   .photo__userphoto-text {
-    padding: 5px 10px;
-    grid-column-start: 1;
-    grid-column-end: 4;
+    padding: 36px 10px 4px;
   }
 }

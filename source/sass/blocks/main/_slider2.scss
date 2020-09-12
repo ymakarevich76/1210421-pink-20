@@ -36,7 +36,6 @@
   left: 50%;
   bottom: 15px;
   z-index: 100;
-  visibility: hidden;
 }
 
 .slideshow-wrap2 label {
@@ -59,6 +58,17 @@
     bottom: 3px;
     background-color: $c-main-opacity;
   }
+}
+
+.slideshow-wrap2__btn1:focus + label,
+.slideshow-wrap2__btn2:focus + label,
+.slideshow-wrap2__btn3:focus + label {
+  outline: none;
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+  border: 3px solid $c-main;
+  bottom: 0;
 }
 
 .slideshow-wrap2 .slideshow-wrap2__btn2--active {
