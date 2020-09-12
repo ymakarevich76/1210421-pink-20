@@ -151,9 +151,9 @@
     }
 
     &:active {
-      background-color: $c-main;
-      color: $basic-white;
-      opacity: 0.3;
+      background-color: $c-main-toggle;
+      border-color: transparent;
+      color: $basic-white-opacity;
     }
   }
 }
@@ -228,6 +228,10 @@
     top: -3px;
     right: -5px;
     width: 202px;
+
+    &:focus {
+      outline: 1px solid $base-pink;
+    }
 
     &--none {
       display: block;

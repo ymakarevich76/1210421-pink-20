@@ -11,23 +11,24 @@
 }
 
 .tabs > input[type="radio"] {
-  display: none;
+  // display: none;
 }
 
 .tabs > div {
   display: none;
 }
 
-.tab-btn-1:checked ~ .tab__content--1,
-.tab-btn-2:checked ~ .tab__content--2,
-.tab-btn-3:checked ~ .tab__content--3 {
+.tabs__tab-btn-2:checked ~ .tabs__content--2,
+.tabs__tab-btn-1:checked ~ .tabs__content--1,
+.tabs__tab-btn-3:checked ~ .tabs__content--3 {
   display: block;
 }
 
 .tabs > label {
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   user-select: none;
   padding: 2px 17px;
   font-size: 16px;
@@ -37,10 +38,6 @@
   position: relative;
   top: 1px;
 }
-
-// .upload__filter:focus:not(:checked) + label::before {
-//   border-color: $base-pink;
-// }
 
 .tabs > input[type="radio"] + label:focus {
   outline: 2px solid $base-pink;
@@ -54,6 +51,12 @@
   fill: $base-pink;
 }
 
+.tabs__tab-btn-1:focus + label,
+.tabs__tab-btn-2:focus + label,
+.tabs__tab-btn-3:focus + label {
+  outline: 2px solid $base-pink;
+}
+
 @media (min-width: $tablet-width) {
   .tabs > div {
     display: block;
@@ -62,15 +65,18 @@
     left: -15px;
   }
 
+  .tabs > input[type="radio"] {
+    display: none;
+  }
+
   .tabs label {
     position: relative;
     top: -7px;
     left: 3px;
+    // width: 48px;
 
     &:nth-child(1) {
       grid-area: lb1;
-      // position: relative;
-      // top: -7px;
     }
 
     &:nth-child(2) {
@@ -80,9 +86,17 @@
     &:nth-child(3) {
       grid-area: lb3;
     }
+
+    &:focus {
+      // width: 48px;
+    }
   }
 
-  .tab__content {
+  .tabs svg {
+    // width: 100%;
+  }
+
+  .tabs__content {
     &--1 {
       grid-area: cnt1;
     }
@@ -134,7 +148,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .tab__content {
+  .tabs__content {
     &--3 .upload__form-range {
       margin-top: -11px;
     }

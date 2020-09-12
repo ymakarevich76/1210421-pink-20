@@ -10,261 +10,259 @@
     <link rel="stylesheet" href="css/styles.min.css">
   </head>
   <body class="page-body">
-    <div class="wrapper">
-      <header class="page-header">
-        <div class="container page-header__inner">
-        <div class="page-header__wrap page-header__wrap--active">
-          <a href="index.html" class="page-header__logo">
-            <svg class="page-header__logo-mob" width="74" height="23">
-              <use xlink:href="img/sprite.svg#icon-loginMob"></use>
-            </svg>
-            <svg class="page-header__logo-tab" width="145" height="40">
-              <use xlink:href="img/sprite.svg#icon-loginTab"></use>
-            </svg>
-            <svg class="page-header__logo-desk" width="147" height="40">
-              <use xlink:href="img/sprite.svg#icon-loginDesk"></use>
+    <header class="page-header">
+      <div class="container page-header__inner">
+      <div class="page-header__wrap page-header__wrap--active">
+        <a href="index.html" class="page-header__logo" aria-label="Логотип">
+          <svg class="page-header__logo-mob" width="74" height="23">
+            <use xlink:href="img/sprite.svg#icon-loginMob"></use>
+          </svg>
+          <svg class="page-header__logo-tab" width="145" height="40">
+            <use xlink:href="img/sprite.svg#icon-loginTab"></use>
+          </svg>
+          <svg class="page-header__logo-desk" width="147" height="40">
+            <use xlink:href="img/sprite.svg#icon-loginDesk"></use>
+          </svg>
+        </a>
+        <button class="page-header__toggle page-header__toggle--opened" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list list-reset">
+            <li class="main-nav__item">
+              <a href="index.html" class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="photo.html" class="main-nav__link">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html" class="main-nav__link main-nav__link--active">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    </header>
+
+    <main class="page-main">
+
+      <h1 class="visually-hidden">Заполнение формы</h1>
+
+      <section class="intro intro--pdb-15">
+        <h2 class="visually-hidden">Агитационный блок</h2>
+        <div class="container intro__box">
+          <p class="intro__box-title title-1 intro__box-title--lh-33">Конкурс на самое безбашенное путешествие с Пинк</p>
+        </div>
+      </section>
+
+      <section class="offer offer--pad-top">
+        <div class="container">
+          <h2 class="visually-hidden">Предложение</h2>
+          <div class="offer__text offer__text--pad">
+            <p class="offer__text-mobile">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+              <span class="offer__text-tablet">Пожалуйста, заполните форму ниже:</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="form-contest">
+        <h2 class="visually-hidden">Заполнение формы</h2>
+        <form class="form-contest__form" action="https://echo.htmlacademy.ru" method="GET">
+
+          <fieldset class="fieldset form-contest__item">
+            <div class="container">
+              <div class="form-contest__box">
+                <label for="surname" class="form-contest__label title-4">Фамилия:</label>
+                <input class="form-contest__placeholder title-4" type="text" name="surname" id="surname" placeholder="Укажите фамилию *">
+              </div>
+              <div class="form-contest__box">
+                <label for="name" class="form-contest__label title-4">Имя:</label>
+                <input class="form-contest__placeholder title-4" type="text" name="name" id="name" placeholder="Введите ваше имя *">
+              </div>
+              <div class="form-contest__box">
+                <label for="patronymic" class="form-contest__label title-4">Отчество:</label>
+                <input class="form-contest__placeholder title-4" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="fieldset fieldset--grey">
+            <fieldset class="form-contest__item progress progress--1">
+                <legend class="title-4 progress__title">Ваши безбашенные<br> достижения в путешествии</legend>
+              <div class="container">
+                <ul class="progress__list list-reset">
+                    <li class="progress__item progress__checkbox-wrap">
+                      <input class="progress__checkbox" type="checkbox" name="achiev-1" id="achiev-1" checked>
+                      <label for="achiev-1" class="progress__text progress__text--checkbox title-4">Сделал селфи с акулой</label>
+                    </li>
+                    <li class="progress__item progress__checkbox-wrap">
+                      <input class="progress__checkbox" type="checkbox" name="achiev-2" id="achiev-2" checked>
+                      <label for="achiev-2" class="progress__text progress__text--checkbox title-4">Обгорел на пляже</label>
+                    </li>
+                    <li class="progress__item progress__checkbox-wrap">
+                      <input class="progress__checkbox" type="checkbox" name="achiev-3" id="achiev-3">
+                      <label for="achiev-3" class="progress__text progress__text--checkbox title-4">Видел Чака Норриса</label>
+                    </li>
+                    <li class="progress__item progress__checkbox-wrap">
+                      <input class="progress__checkbox" type="checkbox" name="achiev-4" id="achiev-4">
+                      <label for="achiev-4" class="progress__text progress__text--checkbox title-4">Накупил сувениров</label>
+                    </li>
+                    <li class="progress__item progress__checkbox-wrap">
+                      <input class="progress__checkbox" type="checkbox" name="achiev-5" id="achiev-5" checked>
+                      <label for="achiev-5" class="progress__text progress__text--checkbox title-4">Удержал башню</label>
+                    </li>
+                    <li class="progress__item progress__checkbox-wrap">
+                      <input class="progress__checkbox" type="checkbox" name="achiev-6" id="achiev-6">
+                      <label for="achiev-6" class="progress__text progress__text--checkbox title-4">Разгромил отель</label>
+                    </li>
+                </ul>
+              </div>
+            </fieldset>
+          </div>
+
+          <fieldset class="fieldset form-contest__item form-contest__item--contacts progress">
+            <legend class="title-4 progress__title progress__title--display">Контактная информация</legend>
+            <div class="container form-contest__box-wrap">
+              <div class="form-contest__box">
+                <label for="phone" class="form-contest__label title-4">Номер телефона</label>
+                <input class="form-contest__placeholder title-4" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста" required>
+                <div class="form-contest__box-icon">
+                  <svg class="form-contest__box-phone" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="form-contest__box">
+                <label for="email" class="form-contest__label title-4">Адрес почты</label>
+                <input class="form-contest__placeholder title-4" type="email" name="email" id="email" placeholder="Введите почту *" required>
+                <div class="form-contest__box-icon">
+                  <svg class="form-contest__box-mail" width="18" height="14">
+                    <use xlink:href="img/sprite.svg#icon-mail"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="fieldset fieldset--grey">
+            <fieldset class="form-contest__item progress progress--2">
+              <legend class="title-4 progress__title progress__title--padd-39">С каким приложением путешествовали?</legend>
+              <div class="container">
+                <ul class="progress__list list-reset">
+                  <li class="progress__item progress__radio-wrap">
+                    <input class="progress__radio" type="radio" name="radio" value="ios" id="ios" checked>
+                    <label for="ios" class="progress__text progress__text--radio title-4">Pink для iOS</label>
+                  </li>
+                  <li class="progress__item progress__radio-wrap">
+                    <input class="progress__radio" type="radio" name="radio" value="android" id="android">
+                    <label for="android" class="progress__text progress__text--radio title-4">Pink на Android</label>
+                  </li>
+                  <li class="progress__item progress__radio-wrap">
+                    <input class="progress__radio" type="radio" name="radio" value="windows" id="windows">
+                    <label for="windows" class="progress__text progress__text--radio title-4">Windows Phone</label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+          </div>
+
+          <fieldset class="fieldset form-contest__item form-text">
+            <legend class="title-4 form-text__title">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
+            <div class="container">
+              <label>
+                <textarea class="form-text__textarea form-contest__placeholder title-4" id="text" placeholder="Можно прям в красках, не стесняясь в выражениях" aria-label="Опиши свои эмоции"></textarea>
+              </label>
+            </div>
+          </fieldset>
+          <div class="form-textwrap container">
+            <button type="submit" class="btn-2 btn form-contest__btn">Отправить форму</button>
+
+            <small class="form-contest__legend title-4">
+              <span class="form-contest__legend-star">*</span> — обязательные <span class="form-contest__legend-none">для заполнения</span> поля</small>
+          </div>
+        </form>
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper container">
+        <a href="index.html" class="page-footer__logo" aria-label="Логотип">
+          <svg class="page-footer__logo-svgmob" width="145" height="40">
+            <use xlink:href="img/sprite.svg#icon-loginMobFooter"></use>
+          </svg>
+          <svg class="page-footer__logo-svgdesk" width="147" height="40">
+            <use xlink:href="img/sprite.svg#icon-loginDeskFooter"></use>
+          </svg>
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list list-reset">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">
+                <span class="visually-hidden">Твиттер</span>
+                <svg class="social__svg" width="18" height="15">
+                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook"  href="https://www.facebook.com/htmlacademy">
+                <span class="visually-hidden">Фейсбук</span>
+                <svg class="social__svg" width="9" height="19">
+                  <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/c/HTMLAcademyRUS/featured">
+                <span class="visually-hidden">Ютуб</span>
+                <svg class="social__svg" width="15" height="14">
+                  <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <span class="copyright__text">Разработано</span>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип академии">
+            <svg class="copyright__svg" width="27" height="34">
+              <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
             </svg>
           </a>
-          <button class="page-header__toggle page-header__toggle--opened" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
         </div>
-        <nav class="main-nav">
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list list-reset">
-              <li class="main-nav__item">
-                <a href="index.html" class="main-nav__link">Главная</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="photo.html" class="main-nav__link">Фотографии</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="form.html" class="main-nav__link main-nav__link--active">Конкурс</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#" class="main-nav__link">HTML Academy</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+      </div> <!--/page-footer__wrapper-->
+    </footer>
+
+    <div class="modal modal__error">
+      <div class="modal__wrap container">
+      <h2 class="modal__title title-2">Что-то пошло <br> не так!</h2>
+      <div class="modal__wrap-text modal__wrap-text--width">
+        <p class="modal__text modal__text--1">Проверьте поля, выделенные красным, <br> скорее всего вы забыли их заполнить</p>
       </div>
-      </header>
-
-      <main class="page-main">
-
-        <h1 class="visually-hidden">Заполнение формы</h1>
-
-        <section class="intro intro--pdb-15">
-          <h2 class="visually-hidden">Агитационный блок</h2>
-          <div class="container intro__box">
-            <p class="intro__box-title title-1 intro__box-title--lh-33">Конкурс на самое безбашенное путешествие с Пинк</p>
-          </div>
-        </section>
-
-        <section class="offer offer--pad-top">
-          <div class="container">
-            <h2 class="visually-hidden">Предложение</h2>
-            <div class="offer__text offer__text--pad">
-              <p class="offer__text-mobile">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-                <span class="offer__text-tablet">Пожалуйста, заполните форму ниже:</span>
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section class="form-contest">
-          <h2 class="visually-hidden">Заполнение формы</h2>
-          <form class="form-contest__form" action="https://echo.htmlacademy.ru" method="GET">
-
-            <fieldset class="fieldset form-contest__item">
-              <div class="container">
-                <div class="form-contest__box">
-                  <label for="surname" class="form-contest__label title-4">Фамилия:</label>
-                  <input class="form-contest__placeholder title-4" type="text" name="surname" id="surname" placeholder="Укажите фамилию *">
-                </div>
-                <div class="form-contest__box">
-                  <label for="name" class="form-contest__label title-4">Имя:</label>
-                  <input class="form-contest__placeholder title-4" type="text" name="name" id="name" placeholder="Введите ваше имя *">
-                </div>
-                <div class="form-contest__box">
-                  <label for="patronymic" class="form-contest__label title-4">Отчество:</label>
-                  <input class="form-contest__placeholder title-4" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
-                </div>
-              </div>
-            </fieldset>
-
-            <div class="fieldset fieldset--grey">
-              <fieldset class="form-contest__item progress progress--1">
-                  <legend class="title-4 progress__title">Ваши безбашенные<br> достижения в путешествии</legend>
-                <div class="container">
-                  <ul class="progress__list list-reset">
-                      <li class="progress__item progress__checkbox-wrap">
-                        <input class="progress__checkbox" type="checkbox" name="achiev-1" id="achiev-1" checked>
-                        <label for="achiev-1" class="progress__text progress__text--checkbox title-4">Сделал селфи с акулой</label>
-                      </li>
-                      <li class="progress__item progress__checkbox-wrap">
-                        <input class="progress__checkbox" type="checkbox" name="achiev-2" id="achiev-2" checked>
-                        <label for="achiev-2" class="progress__text progress__text--checkbox title-4">Обгорел на пляже</label>
-                      </li>
-                      <li class="progress__item progress__checkbox-wrap">
-                        <input class="progress__checkbox" type="checkbox" name="achiev-3" id="achiev-3">
-                        <label for="achiev-3" class="progress__text progress__text--checkbox title-4">Видел Чака Норриса</label>
-                      </li>
-                      <li class="progress__item progress__checkbox-wrap">
-                        <input class="progress__checkbox" type="checkbox" name="achiev-4" id="achiev-4">
-                        <label for="achiev-4" class="progress__text progress__text--checkbox title-4">Накупил сувениров</label>
-                      </li>
-                      <li class="progress__item progress__checkbox-wrap">
-                        <input class="progress__checkbox" type="checkbox" name="achiev-5" id="achiev-5" checked>
-                        <label for="achiev-5" class="progress__text progress__text--checkbox title-4">Удержал башню</label>
-                      </li>
-                      <li class="progress__item progress__checkbox-wrap">
-                        <input class="progress__checkbox" type="checkbox" name="achiev-6" id="achiev-6">
-                        <label for="achiev-6" class="progress__text progress__text--checkbox title-4">Разгромил отель</label>
-                      </li>
-                  </ul>
-                </div>
-              </fieldset>
-            </div>
-
-            <fieldset class="fieldset form-contest__item form-contest__item--contacts progress">
-              <legend class="title-4 progress__title progress__title--display">Контактная информация</legend>
-              <div class="container form-contest__box-wrap">
-                <div class="form-contest__box">
-                  <label for="phone" class="form-contest__label title-4">Номер телефона</label>
-                  <input class="form-contest__placeholder title-4" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста" required>
-                  <div class="form-contest__box-icon">
-                    <svg class="form-contest__box-phone" width="20" height="20">
-                      <use xlink:href="img/sprite.svg#icon-phone"></use>
-                    </svg>
-                  </div>
-                </div>
-                <div class="form-contest__box">
-                  <label for="email" class="form-contest__label title-4">Адрес почты</label>
-                  <input class="form-contest__placeholder title-4" type="email" name="email" id="email" placeholder="Введите почту *" required>
-                  <div class="form-contest__box-icon">
-                    <svg class="form-contest__box-mail" width="18" height="14">
-                      <use xlink:href="img/sprite.svg#icon-mail"></use>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </fieldset>
-
-            <div class="fieldset fieldset--grey">
-              <fieldset class="form-contest__item progress progress--2">
-                <legend class="title-4 progress__title progress__title--padd-39">С каким приложением путешествовали?</legend>
-                <div class="container">
-                  <ul class="progress__list list-reset">
-                    <li class="progress__item progress__radio-wrap">
-                      <input class="progress__radio" type="radio" name="radio" value="ios" id="ios" checked>
-                      <label for="ios" class="progress__text progress__text--radio title-4">Pink для iOS</label>
-                    </li>
-                    <li class="progress__item progress__radio-wrap">
-                      <input class="progress__radio" type="radio" name="radio" value="android" id="android">
-                      <label for="android" class="progress__text progress__text--radio title-4">Pink на Android</label>
-                    </li>
-                    <li class="progress__item progress__radio-wrap">
-                      <input class="progress__radio" type="radio" name="radio" value="windows" id="windows">
-                      <label for="windows" class="progress__text progress__text--radio title-4">Windows Phone</label>
-                    </li>
-                  </ul>
-                </div>
-              </fieldset>
-            </div>
-
-            <fieldset class="fieldset form-contest__item form-text">
-              <legend class="title-4 form-text__title">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
-              <div class="container">
-                <label>
-                  <textarea class="form-text__textarea form-contest__placeholder title-4" id="text" placeholder="Можно прям в красках, не стесняясь в выражениях" aria-label="Опиши свои эмоции"></textarea>
-                </label>
-              </div>
-            </fieldset>
-            <div class="form-textwrap container">
-              <button type="submit" class="btn-2 btn form-contest__btn">Отправить форму</button>
-
-              <small class="form-contest__legend title-4">
-                <span class="form-contest__legend-star">*</span> — обязательные <span class="form-contest__legend-none">для заполнения</span> поля</small>
-            </div>
-          </form>
-        </section>
-
-      </main>
-
-      <footer class="page-footer">
-        <div class="page-footer__wrapper container">
-          <a href="index.html" class="page-footer__logo">
-            <svg class="page-footer__logo-svgmob" width="145" height="40">
-              <use xlink:href="img/sprite.svg#icon-loginMobFooter"></use>
-            </svg>
-            <svg class="page-footer__logo-svgdesk" width="147" height="40">
-              <use xlink:href="img/sprite.svg#icon-loginDeskFooter"></use>
-            </svg>
-          </a>
-          <div class="page-footer__social social">
-            <ul class="social__list list-reset">
-              <li class="social__item">
-                <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">
-                  <span class="visually-hidden">Твиттер</span>
-                  <svg class="social__svg" width="18" height="15">
-                    <use xlink:href="img/sprite.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--facebook"  href="https://www.facebook.com/htmlacademy">
-                  <span class="visually-hidden">Фейсбук</span>
-                  <svg class="social__svg" width="9" height="19">
-                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--youtube" href="https://www.youtube.com/c/HTMLAcademyRUS/featured">
-                  <span class="visually-hidden">Ютуб</span>
-                  <svg class="social__svg" width="15" height="14">
-                    <use xlink:href="img/sprite.svg#icon-youtube"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="page-footer__copyright copyright">
-            <span class="copyright__text">Разработано</span>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <svg class="copyright__svg" width="27" height="34">
-                <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
-              </svg>
-            </a>
-          </div>
-        </div> <!--/page-footer__wrapper-->
-      </footer>
-
-      <div class="modal modal__error">
-        <div class="modal__wrap container">
-        <h2 class="modal__title title-2">Что-то пошло <br> не так!</h2>
-        <div class="modal__wrap-text modal__wrap-text--width">
-          <p class="modal__text modal__text--1">Проверьте поля, выделенные красным, <br> скорее всего вы забыли их заполнить</p>
-        </div>
-        <div class="modal__inner modal__inner--grey">
-          <button class="modal__btn btn btn-2" type="button">ОК</button>
-        </div>
-        </div><!--/modal__wrap-->
+      <div class="modal__inner modal__inner--grey">
+        <button class="modal__btn btn btn-2" type="button">ОК</button>
       </div>
+      </div><!--/modal__wrap-->
+    </div>
 
-      <div class="modal modal__good">
-        <div class="modal__wrap">
-        <div class="container modal__inner">
-          <h2 class="modal__title title-2">Ваша заявка отправлена</h2>
-          <div class="modal__wrap-text">
-            <p class="modal__text modal__text--2">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и<br> оповестим вас.</p>
-          </div>
+    <div class="modal modal__good">
+      <div class="modal__wrap">
+      <div class="container modal__inner">
+        <h2 class="modal__title title-2">Ваша заявка отправлена</h2>
+        <div class="modal__wrap-text">
+          <p class="modal__text modal__text--2">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и<br> оповестим вас.</p>
         </div>
-        <div class="modal__inner modal__inner--backgr">
-          <button class="modal__button btn btn-2" type="button">ЗАКРЫТЬ ОКНО</button>
-        </div>
-        </div>
+      </div>
+      <div class="modal__inner modal__inner--backgr">
+        <button class="modal__button btn btn-2" type="button">ЗАКРЫТЬ ОКНО</button>
+      </div>
       </div>
     </div>
     <script src="js/script.min.js"></script>

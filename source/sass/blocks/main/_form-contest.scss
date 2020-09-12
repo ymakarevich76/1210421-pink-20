@@ -43,10 +43,11 @@
 
   &::placeholder {
     color: $c-main;
+    opacity: 1;
   }
 
-  &:not(.form-text__textarea):focus,
-  &:not(.form-text__textarea):active {
+  &:focus,
+  &:active {
     outline: none;
     border-color: $base-pink;
   }

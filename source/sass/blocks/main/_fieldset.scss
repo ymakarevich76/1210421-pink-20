@@ -36,12 +36,14 @@
 
     &--grey .form-contest__item {
       margin-bottom: 20px;
-      padding-bottom: 9px;
+      padding-bottom: 14px;
     }
 
     &--grey:nth-child(2) .form-contest__item {
       margin-bottom: 12px;
-      padding: 0 0 0 40px;
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 0;
     }
 
     &:nth-child(2) {

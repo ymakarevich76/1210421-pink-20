@@ -16,7 +16,7 @@ const del = require("del");
 
 
 // Styles
-const styles = () => {
+const stylesBuild = () => {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
@@ -27,6 +27,19 @@ const styles = () => {
     .pipe(csso())
     .pipe(rename("styles.min.css"))
     .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"))
+    .pipe(sync.stream());
+};
+
+exports.stylesBuild = stylesBuild;
+
+const styles = () => {
+  return gulp.src("source/sass/style.scss")
+    .pipe(plumber())
+    .pipe(sass())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 };
@@ -94,7 +107,7 @@ exports.server = server;
 
 // Watcher
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
+  gulp.watch("source/sass/**/*.scss", gulp.series("stylesBuild"));
   gulp.watch("source/js/**/*.js", gulp.series("scripts"));
   gulp.watch("source/**/*.html", gulp.series("html"));
   // gulp.watch("html").on("change", sync.reload);
@@ -147,6 +160,7 @@ exports.htmlMinify = htmlMinify;
 const build = gulp.series(
   clean,
   copy,
+  stylesBuild,
   styles,
   scripts,
   images,
