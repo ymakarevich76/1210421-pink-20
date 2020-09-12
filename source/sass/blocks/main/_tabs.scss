@@ -24,7 +24,7 @@
   display: block;
 }
 
-.tabs > label {
+.tabs label {
   height: 48px;
   display: flex;
   justify-content: center;
@@ -72,8 +72,8 @@
   .tabs label {
     position: relative;
     top: -7px;
-    left: 3px;
-    // width: 48px;
+    left: -4px;
+    padding: 2px 22px;
 
     &:nth-child(1) {
       grid-area: lb1;
@@ -90,10 +90,6 @@
     &:focus {
       // width: 48px;
     }
-  }
-
-  .tabs svg {
-    // width: 100%;
   }
 
   .tabs__content {
@@ -122,7 +118,7 @@
       content: "";
       display: block;
       position: absolute;
-      top: 43px;
+      top: 42px;
       right: -15px;
       width: 132%;
       height: 1px;

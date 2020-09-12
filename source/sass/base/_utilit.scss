@@ -1,3 +1,9 @@
+// .wrapper {
+//   max-width: 1200px;
+//   margin: 0 auto;
+//   position: relative;
+// }
+
 .container {
   max-width: 980px;
   width: 100%;
@@ -28,3 +34,9 @@
 
   list-style: none;
 }
+
+// @media (min-width: $desktop-width) {
+//   .container {
+//     max-width: 1200px;
+//   }
+// }
