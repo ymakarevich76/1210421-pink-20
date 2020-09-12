@@ -1,5 +1,7 @@
 .fieldset--grey {
   background-color: $grey-background;
+  margin-left: -20px;
+  margin-right: -20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -35,8 +37,8 @@
     }
 
     &--grey .form-contest__item {
-      margin-bottom: 20px;
-      padding-bottom: 14px;
+      padding: 0 35px 14px;
+      margin: 0 20px 20px;
     }
 
     &--grey:nth-child(2) .form-contest__item {

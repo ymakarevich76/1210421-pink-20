@@ -71,24 +71,22 @@
         </div>
       </section>
 
-      <section class="form-contest">
+      <section class="form-contest container">
         <h2 class="visually-hidden">Заполнение формы</h2>
         <form class="form-contest__form" action="https://echo.htmlacademy.ru" method="GET">
 
           <fieldset class="fieldset form-contest__item">
-            <div class="container">
-              <div class="form-contest__box">
-                <label for="surname" class="form-contest__label title-4">Фамилия:</label>
-                <input class="form-contest__placeholder title-4" type="text" name="surname" id="surname" placeholder="Укажите фамилию *">
-              </div>
-              <div class="form-contest__box">
-                <label for="name" class="form-contest__label title-4">Имя:</label>
-                <input class="form-contest__placeholder title-4" type="text" name="name" id="name" placeholder="Введите ваше имя *">
-              </div>
-              <div class="form-contest__box">
-                <label for="patronymic" class="form-contest__label title-4">Отчество:</label>
-                <input class="form-contest__placeholder title-4" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
-              </div>
+            <div class="form-contest__box">
+              <label for="surname" class="form-contest__label title-4">Фамилия:</label>
+              <input class="form-contest__placeholder title-4" type="text" name="surname" id="surname" placeholder="Укажите фамилию *">
+            </div>
+            <div class="form-contest__box">
+              <label for="name" class="form-contest__label title-4">Имя:</label>
+              <input class="form-contest__placeholder title-4" type="text" name="name" id="name" placeholder="Введите ваше имя *">
+            </div>
+            <div class="form-contest__box">
+              <label for="patronymic" class="form-contest__label title-4">Отчество:</label>
+              <input class="form-contest__placeholder title-4" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
             </div>
           </fieldset>
 
@@ -128,7 +126,7 @@
 
           <fieldset class="fieldset form-contest__item form-contest__item--contacts progress">
             <legend class="title-4 progress__title progress__title--display">Контактная информация</legend>
-            <div class="container form-contest__box-wrap">
+            <div class="form-contest__box-wrap">
               <div class="form-contest__box">
                 <label for="phone" class="form-contest__label title-4">Номер телефона</label>
                 <input class="form-contest__placeholder title-4" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста" required>
@@ -174,13 +172,11 @@
 
           <fieldset class="fieldset form-contest__item form-text">
             <legend class="title-4 form-text__title">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
-            <div class="container">
               <label>
                 <textarea class="form-text__textarea form-contest__placeholder title-4" id="text" placeholder="Можно прям в красках, не стесняясь в выражениях" aria-label="Опиши свои эмоции"></textarea>
               </label>
-            </div>
           </fieldset>
-          <div class="form-textwrap container">
+          <div class="form-textwrap">
             <button type="submit" class="btn-2 btn form-contest__btn">Отправить форму</button>
 
             <small class="form-contest__legend title-4">

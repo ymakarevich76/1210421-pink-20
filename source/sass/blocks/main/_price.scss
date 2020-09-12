@@ -157,6 +157,7 @@
     &:first-child {
       background-color: $grey-background;
       display: table-cell;
+      border-right: 2px solid $grey-background;
     }
 
     &--active::after {
@@ -223,7 +224,7 @@
 
   .price__table {
     width: 940px;
-    margin-top: 53px;
+    margin-top: 43px;
   }
 
   .price__header {
@@ -245,6 +246,7 @@
 
   .price__header-value {
     font-size: 24px;
+    padding-left: 0;
   }
 
   .price__filter {
